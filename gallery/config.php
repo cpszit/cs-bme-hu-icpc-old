@@ -48,8 +48,8 @@ $gallery->app->highlight_size = "200";
 $gallery->app->zipinfo = "/usr/bin/zipinfo";
 $gallery->app->unzip = "/usr/bin/unzip";
 $gallery->app->use_exif = "/usr/bin/jhead";
-$gallery->app->movieThumbnail = "/home/dmarx/public_html/acm/gallery/images/movie.thumb.jpg";
-$gallery->app->albumDir = "/home/dmarx/public_html/acm/gallery/albums";
+$gallery->app->movieThumbnail = "/home/nemkin/public_html/acm/gallery/images/movie.thumb.jpg";
+$gallery->app->albumDir = "/home/nemkin/public_html/acm/gallery/albums";
 $gallery->app->tmpDir = "/tmp";
 $gallery->app->photoAlbumURL = "http://www.cs.bme.hu/acm/gallery";
 $gallery->app->albumDirURL = "http://www.cs.bme.hu/acm/gallery/albums";
@@ -62,7 +62,7 @@ $gallery->app->debug = "no";
 $gallery->app->use_flock = "yes";
 $gallery->app->expectedExecStatus = "0";
 $gallery->app->sessionVar = "gallery_session";
-$gallery->app->userDir = "/home/dmarx/public_html/acm/gallery/albums/.users";
+$gallery->app->userDir = "/home/nemkin/public_html/acm/gallery/albums/.users";
 $gallery->app->pnmtojpeg = "pnmtojpeg";
 
 /* Defaults */
