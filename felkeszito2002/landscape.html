@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0039)http://ceoi.ubbcluj.ro/internet/p6.html --> 
+  <meta content="text/html; charset=windows-1250" http-equiv="Content-Type">
+ 
+  <meta content="MSHTML 5.00.2314.1000" name="GENERATOR">
+  <title></title>
+</head>
+<body alink="#ffcc00" bgcolor="white" link="#ffcc00" vlink="#ffcc00">
+ 
+<center> </center>
+<font face="helvetica" size="2"><font size="3"><font size="-1"><font size="-1"><big><big><big><b>
+Enlightened landscape        </b></big></big></big><br>
+<br>
+Consider a landscape composed of connected line segments:        
+<center><img border="5" src="landscape.gif">
+</center>
+<br>
+Above the        landscape, <i>N</i> light bulbs are hang at the same height
+<i>T</i> in        various horizontal positions. The purpose of these light
+bulbs is to light        up the entire landscape. A landscape point is considered
+lit if it can        "see" a light bulb directly, that is, if the line segment
+which links the        point with a bulb does not contain any other landscape
+segments point.        <br>
+<br>
+<b>Task</b><br>
+Write a program that determines the mi-ni-mum        number of light bulbs
+that must be switched on in order to illuminate the        entire landscape.
+<br>
+<br>
+<b>Input </b><br>
+Input file name:        <b>LIGHT.IN</b><br>
+<b>Line 1</b>: M        <li>An integer, the number of landscape height specifications,
+including        the first and the last point of the landscape. <br>
+  <b>Lines        2..<i>M</i>+1</b>: X<sub>i</sub> H<sub>i</sub></li>
+<li>Two integers, separated by a space: the landscape height H<sub>i</sub>
+        at horizontal position X<sub>i</sub>, 1 &lt;= i &lt;= M; for 1 &lt;=
+i        &lt;= M-1 we have X<sub>i+1</sub> &gt; X<sub>i</sub>; any two consecutive
+       specified points identify a segment of line in the landscape. <br>
+  <b>Line        <i>M</i>+2</b>: N T        </li>
+<li>Two integers, separated by a space, the num-ber of light bulbs and  
+     their height coordinate (altitude). The bulbs are numbered from 1 to
+N)        <br>
+  <b>Line M+3</b>: B<sub>1</sub> B<sub>2</sub> ... B<sub>N</sub></li>
+<li>N integers, separated by spaces: the hori-zon-tal coordinates of the
+       light bulbs Bi+1 &gt; Bi, 1 Ł i Ł N-1; <br>
+  <br>
+  <b>Output </b><br>
+File        name: <b>LIGHT.OUT</b><br>
+  <b>Line 1</b>: K        </li>
+<li>An integer: the minimum number of light bulbs to be switched on.    
+   <br>
+  <b>Line 2</b>: L<sub>1</sub> L<sub>2</sub> ... L<sub>K</sub></li>
+<li>K integers, separated by spaces: the labels of the light bulbs to be
+       switched on spe-cified in increasing order of their horizontal   
+    coordinates. <br>
+  <br>
+  <b>Limits</b></li>
+<li>1 &lt;= M &lt;= 200        </li>
+<li>1 &lt;= N &lt;= 200        </li>
+<li>1 &lt;= X<sub>i</sub> &lt;= 10000 for 1 &lt;= i &lt;= M        </li>
+<li>1 &lt; T &lt;= 10000        </li>
+<li>1 &lt;= H<sub>i</sub> &lt;= 10000 for 1 &lt;= i &lt;= M        </li>
+<li>T &gt; H<sub>i</sub> for any 1 &lt;= i &lt;= M        </li>
+<li>X<sub>1</sub> &lt;= B<sub>1</sub> and B<sub>N</sub> &lt;=        X<sub>
+M</sub></li>
+<li>The task always has a solution for the test data. If there are      
+ multiple solutions, only one is required. <br>
+  <br>
+  <b>Example</b><big><font face="courier">
+  <pre>LIGHT.IN          LIGHT.OUT <br>6                 2<br>1 1               1 4<br>3 3<br>4 1<br>7 1<br>8 3<br>11 1<br>4 5<br>1 5 6 10</pre>
+  </font></big></li>
+</font></font></font></font><br>
+</body>
+</html>

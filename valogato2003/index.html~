@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 1st July 2003), see www.w3.org">
+<meta http-equiv="Content-Type" content=
+"text/html; charset=iso-8859-2">
+<title>ACM programozási verseny 2003 - BME válogató</title>
+</head>
+<body bgcolor="#FFFFDE">
+<center><img alt="ACM" src="../acm.gif"></center>
+<h1><font color="#900090">ACM programozási verseny 2003 - BME
+válogató</font></h1>
+<font size="+1">2003. október 26.</font>
+<p>2003. október 26-án, vasárnap került megrendezésre egyetemünkön
+negyedszer az ACM International Collegiate Programming Contest
+válogatója. A cél a legjobb három csapat kiválasztása volt, akik
+képviselhetik a BME-t a lengyelországi regionális elõdöntõn, melyet
+2003. november 14-16 között a varsói egyetemen tartanak. Szintén e
+régióba tartozik Ausztria, Horvátország, Csehország, Németország,
+Szlovákia és Szlovénia is. A döntõben, melyet 2004 márciusában
+rendeznek meg Prágában, a régió legjobb csapata vehet részt.</p>
+<p>Az egyetemi válogatóra 19 három fõs csapat jelentkezett, és
+küzdötte végig az 5 órát, mely rendelkezésükre állt a kiadott 7,
+váltakozó nehézségû algoritmikus jellegû feladat megoldásához. A
+szabályoknak megfelelõen minden csapat pontosan 1, azonos
+konfigurációjú számítógépet használhatott. Így alakult ki végül
+szoros versenyben az alábbi végeredmény:</p>
+<table border="1">
+<tr>
+<th>Helyezés</th>
+<th>Versenyzõk</th>
+<th>Megoldott feladatok<br>
+(idõrendben)</th>
+<th>Összidõ</th>
+</tr>
+<tr>
+<td align="right"><font color="blue">1</font></td>
+<td><font color="blue">Földényi Tamás, Pallos Péter, Hargitai Gábor
+Bálint</font></td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img alt="E" src="../image/E.gif"><img alt="F"
+src="../image/F.gif"><img alt="G" src="../image/G.gif"></td>
+<td align="right"><font color="blue">12:56</font></td>
+</tr>
+<tr>
+<td align="right"><font color="blue">2</font></td>
+<td><font color="blue">Siroki László, Guta Balázs, Szabadka
+Zoltán</font></td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img src="../image/D.gif" alt="D"><img alt="F"
+src="../image/F.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right"><font color="blue">13:53</font></td>
+</tr>
+<tr>
+<td align="right"><font color="blue">3</font></td>
+<td><font color="blue">Felföldi Zsolt, Szabó Péter, Bácsi László,
+Rácz Balázs</font></td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img alt="D" src="../image/D.gif"><img alt="E"
+src="../image/E.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right"><font color="blue">14:00</font></td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Ráth István, Vágó Dávid, Szirják Csaba</td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img src="../image/E.gif" alt="E"><img alt="F"
+src="../image/F.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right">14:55</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Csillag Kristóf, Ritter Ádám, Golda Bence</td>
+<td><img alt="B" src="../image/B.gif"><img alt="D" src=
+"../image/D.gif"><img src="../image/E.gif" alt="E"><img alt="F"
+src="../image/F.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right">17:15</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Agocs Albert, Szoboszlay Dániel, Babos Attila</td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img src="../image/E.gif" alt="E"><img alt="F"
+src="../image/F.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right">17:36</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Flach Attila, Gyebnár Gábor, Sáfár Szilveszter</td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"><img src="../image/E.gif" alt="E"><img alt="F"
+src="../image/F.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right">22:45</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Deák Péter, Sipka Bálint, Hubár Tamás</td>
+<td><img alt="C" src="../image/C.gif"><img alt="D" src=
+"../image/D.gif"><img src="../image/G.gif" alt="G"></td>
+<td align="right">09:33</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Borosan Péter, Takács Gábor, Herendi Gergely</td>
+<td><img alt="E" src="../image/E.gif"><img alt="G" src=
+"../image/G.gif"></td>
+<td align="right">07:15</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>Csordás Hunor, Tran Thanh Long, Kiss Ákos</td>
+<td><img alt="B" src="../image/B.gif"><img alt="C" src=
+"../image/C.gif"></td>
+<td align="right">08:07</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Bodó Péter, Hamar Gábor, Horváth Botond György</td>
+<td><img alt="E" src="../image/E.gif"><img alt="G" src=
+"../image/G.gif"></td>
+<td align="right">09:36</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Hajós Gergely, Hajdú János, Molnár Viktor</td>
+<td><img alt="C" src="../image/C.gif"></td>
+<td align="right">02:35</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Pápai Tivadar, Vajk Tamás, Földesi Tamás</td>
+<td><img alt="G" src="../image/G.gif"></td>
+<td align="right">03:35</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Boromissza Gergely, Horváth Janos, Budai Balázs</td>
+<td><img alt="G" src="../image/G.gif"></td>
+<td align="right">05:35</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Balog Gergely, Tóth Rudolf, Porcs-Makkay Ákos</td>
+<td><br></td>
+<td align="right">00:00</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Ádam György, Temesváry Andras, Fekete Gabor</td>
+<td><br></td>
+<td align="right">00:00</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>Kovács Tamás, Kiss Ákos, Balatoni Emese</td>
+<td><br></td>
+<td align="right">00:00</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Gerner Karoly, Krizsán Dóra, Újfalusi Melinda</td>
+<td><br></td>
+<td align="right">00:00</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Dady Róbert Kálman, Péntek Zsolt, Tefner Roland</td>
+<td><br></td>
+<td align="right">00:00</td>
+</tr>
+</table>
+<h2><a href="bmeacm2003.pdf">A feladatok szövege</a></h2>
+<h2>Példamegoldások, tesztadatok</h2>
+A tesztelés során minden programnak egy adott teszt bemeneten
+kellett az adott teszt kimenetet produkálnia. Az alábbiakban
+mindegyik feladathoz megadjuk a használt teszt adatokat, és egy
+lehetséges megoldást is. Letölthetõ egyben az összes példamegoldás
+(<a href="bmeacm2003src.zip">zip</a>, <a href=
+"bmeacm2003src.tgz">tgz</a>) és az összes tesztadat tömörítve
+(<a href="bmeacm2003test.zip">zip</a>, <a href=
+"bmeacm2003test.tgz">tgz</a>, <b>2900k</b>).
+<ul>
+<li><b>Problem A: The Road</b><br>
+<a href="src/A.cpp">C++ forrás</a>, <a href="in/a.in">teszt
+bemenet</a>, <a href="out/a.out">teszt kimenet</a></li>
+<li><b>Problem B: Cable</b><br>
+<a href="src/B.cpp">C++ forrás</a>, <a href="in/b.in">teszt
+bemenet</a>, <a href="out/b.out">teszt kimenet</a></li>
+<li><b>Problem C: Necklace</b><br>
+<a href="src/C.cpp">C++ forrás</a>, <a href="in/c.in">teszt
+bemenet</a>, <a href="out/c.out">teszt kimenet</a></li>
+<li><b>Problem D: Billboard</b><br>
+<a href="src/D.cpp">C++ forrás</a>, <a href="in/d.in">teszt
+bemenet</a>, <a href="out/d.out">teszt kimenet</a></li>
+<li><b>Problem E: Tennis</b><br>
+<a href="src/E.cpp">C++ forrás</a>, <a href="in/e.in">teszt
+bemenet</a>, <a href="out/e.out">teszt kimenet</a></li>
+<li><b>Problem F: Flip Game</b><br>
+<a href="src/F.cpp">C++ forrás</a>, <a href="in/f.in">teszt
+bemenet</a>, <a href="out/f.out">teszt kimenet</a></li>
+<li><b>Problem G: Joseph</b><br>
+<a href="src/G.cpp">C++ forrás</a>, <a href="in/g.in">teszt
+bemenet</a>, <a href="out/g.out">teszt kimenet</a></li>
+</ul>
+<h2><a href=
+"http://www.cs.bme.hu/acm/gallery/view_album.php?set_albumName=ACM2003">
+Fényképek</a></h2>
+<a href="http://www.cs.bme.hu/acm/">Vissza az ACM verseny
+fõlapra</a>
+<hr>
+A lappal vagy versennyel kapcsolatos kérdéseket, észrevételeket,
+javaslatokat az <a href="mailto:acm@cs.bme.hu">acm@cs.bme.hu</a>
+címre lehet küldeni.
+</body>
+</html>

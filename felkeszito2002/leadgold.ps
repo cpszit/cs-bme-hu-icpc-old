@@ -1,0 +1,2357 @@
+%!PS-Adobe-3.0
+%%Title: (98REV227b.PDF)
+%%Version: 1 2
+%%CreationDate: (D:19980301134916)
+%%For: (ACM ICPC Judges)
+%%DocumentData: Clean7Bit
+%%BoundingBox: 0 0 612 792
+%%Pages: 1
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%DocumentSuppliedResources:
+%%+ font TimesNewRoman,Italic
+%%+ font Arial,Bold$2X1
+%%+ font Arial$2X1
+%%+ font TimesNewRoman$2X1
+%%+ font Symbol
+%%+ font CourierNew
+%%+ procset (Adobe Acrobat - PDF operators) 1.2 0
+%%+ procset (Adobe Acrobat - type operators) 1.2 0
+%%+ procset (Adobe Acrobat - general image support) 1.2 0
+%%+ procset (Adobe Acrobat - monochrome image support) 1.2 0
+%%+ procset (Adobe Acrobat - color image support) 1.2 0
+%%+ procset (Adobe Acrobat - indexed color image support) 1.2 0
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+/currentpacking where{pop currentpacking true setpacking}if
+userdict /PDF 85 dict put
+%%BeginFile: pdfvars.prc
+%%Copyright: Copyright 1987-1996 Adobe Systems Incorporated. All Rights Reserved.
+userdict /PDFVars 75 dict dup begin put
+/_save 0 def
+/_cshow 0 def
+/InitAll 0 def
+/TermAll 0 def
+/_lp /none def
+/_doClip 0 def
+/sfc 0 def
+/_sfcs 0 def
+/_sfc 0 def
+/ssc 0 def
+/_sscs 0 def
+/_ssc 0 def
+/_fcs 0 def
+/_scs 0 def
+/_fp 0 def
+/_sp 0 def
+/_f0 0 array def
+/_f1 1 array def
+/_f3 3 array def
+/_f4 4 array def
+/_fc null def
+/_s0 0 array def
+/_s1 1 array def
+/_s3 3 array def
+/_s4 4 array def
+/_sc null def
+/_cpcf null def
+/_cpcs null def
+/_inT false def
+/_tr -1 def
+/_rise 0 def
+/_ax 0 def
+/_cx 0 def
+/_ld 0 def
+/_tm matrix def
+/_ctm matrix def
+/_mtx matrix def
+/_hy (-) def
+/_fScl 0 def
+/_hs 1 def
+/_pdfEncodings 2 array def
+/_Tj 0 def
+/_italMtx[1 0 .212557 1 0 0]def
+/_basefont 0 def
+/_basefonto 0 def
+/_categories 10 dict def
+/_sa? true def
+/_op? false def
+/_ColorSep5044? false def
+/_tmpcolr? [] def
+/_tmpop? {} def
+end
+%%EndFile
+PDFVars begin PDF begin
+%%BeginFile: pdfutil.prc
+%%Copyright: Copyright 1993 Adobe Systems Incorporated. All Rights Reserved.
+/bd {bind def} bind def
+/ld {load def} bd
+/dd { PDFVars 3 1 roll put } bd
+/xdd { exch dd } bd
+/Level2?
+/languagelevel where { pop languagelevel 2 ge } { false } ifelse
+def
+/here {
+dup currentdict exch known
+{ currentdict exch get true }
+{ pop false }
+ifelse
+} bd
+/isdefined? { where { pop true } { false } ifelse } bd
+/StartLoad { dup dup not { /_save save dd } if } bd
+/EndLoad { if not { _save restore } if } bd
+/npop { { pop } repeat } bd
+%%EndFile
+%%BeginFile: l2compat
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+/cshow isdefined? not StartLoad {
+/cshow {
+exch /_cshow xdd
+{ 0 0 _cshow exec } forall
+} bd
+} EndLoad
+/setcmykcolor isdefined? not StartLoad {
+/setcmykcolor {
+1 sub 4 1 roll
+3 {
+3 index add neg dup 0 lt { pop 0 } if
+3 1 roll
+} repeat
+setrgbcolor
+pop
+} bd
+} EndLoad
+/rectclip isdefined? not StartLoad {
+/re 0 def
+/rectclip { newpath re clip newpath } bd
+} EndLoad
+/execform isdefined? not StartLoad {
+/execform {
+gsave dup begin
+Matrix concat
+BBox aload pop
+exch 3 index sub
+exch 2 index sub
+rectclip
+PaintProc end grestore
+} def
+} EndLoad
+/sethalftone isdefined? not StartLoad {
+/sethalftone {
+begin
+HalftoneType 1 eq
+{ Frequency Angle /SpotFunction load setscreen }
+if
+end
+} bd
+} EndLoad
+%%EndFile
+%%BeginFile: pdf.prc
+%%Copyright: Copyright 1987-1996 Adobe Systems Incorporated. All Rights Reserved.
+/initialize {
+_ColorSep5044? {sep_ops begin 50 dict begin} if
+newpath
+} bd
+/terminate {
+_ColorSep5044? {end end} if
+} bd
+Level2? StartLoad
+{ /m/moveto ld
+/l/lineto ld
+/c/curveto ld
+/setSA/setstrokeadjust ld
+} EndLoad
+Level2? not StartLoad
+{
+/pl {
+transform
+0.25 sub round 0.25 add exch
+0.25 sub round 0.25 add exch
+itransform
+} bd
+/m { _sa? { pl } if moveto } bd
+/l { _sa? { pl } if lineto } bd
+/c { _sa? { pl } if curveto } bd
+/setSA { /_sa? xdd } bd
+} EndLoad
+/v { currentpoint 6 2 roll c } bd
+/y { 2 copy c } bd
+/h/closepath ld
+/d/setdash ld
+/j/setlinejoin ld
+/J/setlinecap ld
+/M/setmiterlimit ld
+/w/setlinewidth ld
+/cf currentflat def
+/i {
+dup 0 eq { pop cf } if
+setflat
+} bd
+/ilp { /_lp /none dd } bd
+/sfc {
+_lp /fill ne {
+_sfcs
+_sfc
+/_lp /fill dd
+} if
+} dd
+/ssc {
+_lp /stroke ne {
+_sscs
+_ssc
+/_lp /stroke dd
+} if
+} dd
+/n {
+_doClip 1 ge {
+_doClip 1 eq { clip } { eoclip } ifelse
+/_doClip 0 dd
+} if
+newpath
+} bd
+/f {
+_doClip 1 ge
+{
+gsave sfc fill grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ sfc fill }
+ifelse
+} bd
+/f* {
+_doClip 1 ge
+{
+gsave sfc eofill grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ sfc eofill }
+ifelse
+} bd
+/S {
+_doClip 1 ge
+{
+gsave ssc stroke grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ ssc stroke }
+ifelse
+} bd
+/s { h S } bd
+/B {
+_doClip dup 1 ge
+gsave f grestore
+{
+gsave S grestore
+1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ pop S }
+ifelse
+} bd
+/b { h B } bd
+/B* {
+_doClip dup 1 ge
+gsave f* grestore
+{
+gsave S grestore
+1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ pop S }
+ifelse
+} bd
+/b* { h B* } bd
+/W { /_doClip 1 dd } bd
+/W* { /_doClip 2 dd } bd
+/q/save ld
+/Q { restore ilp } bd
+Level2? StartLoad
+{ /defineRes/defineresource ld
+/findRes/findresource ld
+currentglobal
+true systemdict /setglobal get exec
+[/Function /ExtGState /Form]
+{ /Generic /Category findresource dup length dict copy /Category defineresource pop }
+forall
+systemdict /setglobal get exec
+} EndLoad
+Level2? not StartLoad
+{ /AlmostFull?
+{ dup maxlength exch length sub 2 le
+} bind def
+/Expand
+{ 1 index maxlength mul cvi dict
+dup begin exch { def } forall end
+} bind def
+/xput
+{ 3 2 roll
+dup 3 index known not
+{ dup AlmostFull? { 1.5 Expand } if
+} if
+dup 4 2 roll put
+} bind def
+/defineRes
+{ _categories 1 index known not
+{ /_categories _categories 2 index 10 dict xput store
+} if
+_categories exch 2 copy get 5 -1 roll 4 index xput put
+} bind def
+/findRes
+{ _categories exch get exch get
+} bind def
+} EndLoad
+/cs
+{
+dup where { pop load } if
+dup /_fcs xdd
+ucs
+_cpcf exch get
+/_fc xdd
+/_fp null dd
+} bd
+/CS
+{
+dup where { pop load } if
+dup /_scs xdd ucs _cpcs exch get /_sc xdd /_sp null dd
+} bd
+/ucs {
+dup type /arraytype eq
+{ dup 0 get
+dup /Indexed eq
+{ pop 0 get }
+{ /Pattern eq
+{ dup length 2 eq
+{ 1 get ucs }
+{ 0 get }
+ifelse }
+{ 0 get }
+ifelse }
+ifelse }
+if }
+bd
+/_cpcf
+15 dict dup begin
+/DefaultGray _f1 def
+/DeviceGray _f1 def
+/DefaultRGB _f3 def
+/DeviceRGB _f3 def
+/DeviceCMYK _f4 def
+/CalGray _f1 def
+/CalRGB _f3 def
+/CalCMYK _f4 def
+/Lab _f3 def
+/Pattern _f0 def
+/Indexed _f1 def
+/Separation _f1 def
+/CIEBasedA _f1 def
+/CIEBasedABC _f3 def
+end
+dd
+/_cpcs
+15 dict dup begin
+/DefaultGray _s1 def
+/DeviceGray _s1 def
+/DefaultRGB _s3 def
+/DeviceRGB _s3 def
+/DeviceCMYK _s4 def
+/CalGray _s1 def
+/CalRGB _s3 def
+/CalCMYK _s4 def
+/Lab _s3 def
+/Pattern _s0 def
+/Indexed _s1 def
+/Separation _s1 def
+/CIEBasedA _s1 def
+/CIEBasedABC _s3 def
+end
+dd
+Level2? not StartLoad {
+/ri/pop ld
+/makePat/pop ld
+} EndLoad
+Level2? StartLoad {
+/ri
+{
+/findcolorrendering isdefined?
+{
+mark exch
+findcolorrendering
+counttomark 2 eq
+{ type /booleantype eq
+{ dup type /nametype eq
+{ dup /ColorRendering resourcestatus
+{ pop pop
+dup /DefaultColorRendering ne
+{
+/ColorRendering findresource
+setcolorrendering
+} if
+} if
+} if
+} if
+} if
+cleartomark
+}
+{ pop
+} ifelse
+} bd
+/makePat /makepattern ld
+} EndLoad
+Level2? not _ColorSep5044? or StartLoad
+{
+/L1setcolor {
+aload length
+dup 0 eq
+{ pop .5 setgray }
+{ dup 1 eq
+{ pop setgray }
+{ 3 eq
+{ setrgbcolor }
+{ setcmykcolor }
+ifelse }
+ifelse }
+ifelse
+} bind dd
+/_sfcs { } dd
+/_sscs { } dd
+} EndLoad
+Level2? not _ColorSep5044? not and StartLoad
+{
+/_sfc { _fc L1setcolor } dd
+/_ssc { _sc L1setcolor } dd
+} EndLoad
+Level2? _ColorSep5044? not and StartLoad
+{
+/_sfcs
+{
+_fcs setcolorspace
+} bind dd
+/_sscs
+{
+_scs setcolorspace
+} bind dd
+/_sfc
+{
+_fc aload pop
+_fp null eq
+{ setcolor }
+{ _fp setpattern }
+ifelse
+} bind dd
+/_ssc
+{
+_sc aload pop
+_sp null eq { setcolor } { _sp setpattern } ifelse
+} bind dd
+} EndLoad
+/sc
+{
+_fc astore pop
+ilp
+} bd
+/SC
+{
+_sc astore pop
+ilp
+} bd
+/scn {
+dup type /dicttype eq
+{ dup /_fp xdd
+/PaintType get 1 eq
+{ /_fc _f0 dd ilp }
+{ /_fc _cpcf _fcs ucs get dd
+sc }
+ifelse }
+{ sc }
+ifelse
+} bd
+/SCN {
+dup type /dicttype eq
+{ dup /_sp xdd
+/PaintType get 1 eq
+{ /_sc _s0 dd ilp }
+{ /_sc _cpcs _scs ucs get dd
+SC }
+ifelse }
+{ SC }
+ifelse
+} bd
+/g { /DefaultGray cs sc } bd
+/rg { /DefaultRGB cs sc } bd
+/k { /DeviceCMYK cs sc } bd
+/G { /DefaultGray CS SC } bd
+/RG { /DefaultRGB CS SC } bd
+/K { /DeviceCMYK CS SC } bd
+/cm { _mtx astore concat } bd
+/re {
+4 2 roll m
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+h
+} bd
+/RC/rectclip ld
+/EF/execform ld
+/PS { cvx exec } bd
+/initgs {
+/DefaultGray where
+{ pop }
+{ /DefaultGray /DeviceGray dd }
+ifelse
+/DefaultRGB where
+{ pop }
+{ /DefaultRGB /DeviceRGB dd }
+ifelse
+0 g 0 G
+[] 0 d 0 j 0 J 10 M 1 w
+true setSA
+} bd
+21 dict dup begin
+/CosineDot
+{ 180 mul cos exch 180 mul cos add 2 div } bd
+/Cross
+{ abs exch abs 2 copy gt { exch } if pop neg } bd
+/Diamond
+{ abs exch abs 2 copy add .75 le
+{ dup mul exch dup mul add 1 exch sub }
+{ 2 copy add 1.23 le
+{ .85 mul add 1 exch sub }
+{ 1 sub dup mul exch 1 sub dup mul add 1 sub }
+ifelse }
+ifelse } bd
+/Double
+{ exch 2 div exch 2 { 360 mul sin 2 div exch } repeat add } bd
+/DoubleDot
+{ 2 { 360 mul sin 2 div exch } repeat add } bd
+/Ellipse
+{ abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0 lt
+{ pop dup mul exch .75 div dup mul add 4 div
+1 exch sub }
+{ dup 1 gt
+{pop 1 exch sub dup mul exch 1 exch sub
+.75 div dup mul add 4 div 1 sub }
+{ .5 exch sub exch pop exch pop }
+ifelse }
+ifelse } bd
+/EllipseA
+{ dup mul .9 mul exch dup mul add 1 exch sub } bd
+/EllipseB
+{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub } bd
+/EllipseC
+{ dup .5 gt { 1 exch sub } if
+dup .25 ge
+{ .5 exch sub 4 mul dup mul 1 sub }
+{ 4 mul dup mul 1 exch sub }
+ifelse
+exch
+dup .5 gt { 1 exch sub } if
+dup .25 ge
+{ .5 exch sub 4 mul dup mul 1 sub }
+{ 4 mul dup mul 1 exch sub }
+ifelse
+add -2 div } bd
+/InvertedDouble
+{ exch 2 div exch 2 { 360 mul sin 2 div exch } repeat add neg } bd
+/InvertedDoubleDot
+{ 2 { 360 mul sin 2 div exch } repeat add neg } bd
+/InvertedEllipseA
+{ dup mul .9 mul exch dup mul add 1 sub } bd
+/InvertedSimpleDot
+{ dup mul exch dup mul add 1 sub } bd
+/Line
+{ exch pop abs neg } bd
+/LineX
+{ pop } bd
+/LineY
+{ exch pop } bd
+/Rhomboid
+{ abs exch abs 0.9 mul add 2 div } bd
+/Round
+{ abs exch abs 2 copy add 1 le
+{ dup mul exch dup mul add 1 exch sub }
+{ 1 sub dup mul exch 1 sub dup mul add 1 sub }
+ifelse } bd
+/SimpleDot
+{ dup mul exch dup mul add 1 exch sub } bd
+/Square
+{ abs exch abs 2 copy lt { exch } if pop neg } bd
+end
+{ /Function defineRes pop } forall
+/Identity {} /Function defineRes pop
+Level2? StartLoad {
+/gs
+{
+begin
+/SA here { setstrokeadjust } if
+/OP here { setoverprint } if
+/BG here { setblackgeneration } if
+/UCR here { setundercolorremoval } if
+/HT here { sethalftone } if
+/sethalftonephase isdefined? { /HTP here { sethalftonephase } if } if
+/TR here
+{
+dup xcheck { settransfer } { aload pop setcolortransfer } ifelse
+} if
+end
+} bd
+{ /Default /Halftone findresource pop } stopped
+{
+currenthalftone exch defineresource pop }
+if
+} EndLoad
+Level2? not StartLoad {
+/gs
+{
+begin
+/SA here { /_sa? xdd } if
+/OP here { dup /_op? xdd
+/setoverprint where {pop setoverprint}
+{pop} ifelse
+} if
+/HT here { sethalftone } if
+/TR here { dup xcheck
+{ settransfer }
+{ pop }
+ifelse } if
+end
+} bd
+5 dict dup
+begin
+currentscreen 1 [/HalftoneType /SpotFunction /Angle /Frequency]
+{ exch def } forall
+end
+/Default exch /Halftone defineRes pop
+} EndLoad
+/int {
+dup 2 index sub 3 index 5 index sub div 6 -2 roll sub mul
+exch pop add exch pop
+} bd
+/limit {
+dup 2 index le { exch } if pop
+dup 2 index ge { exch } if pop
+} bd
+_ColorSep5044? StartLoad {
+/_sfc
+{
+_fp null eq
+{ _fcs type /arraytype eq
+{_fcs 0 get /Separation eq
+{
+_fcs 1 get /All eq
+{
+_fc aload pop 1 exch sub
+/setseparationgray where pop begin setseparationgray end
+}
+{
+1 _fcs 3 get exec _fcs 1 get
+/findcmykcustomcolor where pop begin findcmykcustomcolor end
+_fc aload pop
+/setcustomcolor where pop begin setcustomcolor end
+}
+ifelse
+}
+{ _fc L1setcolor }
+ifelse
+}
+{ _fc L1setcolor }
+ifelse
+}
+{ _fp setpattern }
+ifelse
+} bind dd
+/_ssc
+{
+_sp null eq
+{ _scs type /arraytype eq
+{_scs 0 get /Separation eq
+{
+_scs 1 get /All eq
+{
+_sc aload pop 1 exch sub
+/setseparationgray where pop begin setseparationgray end
+}
+{
+1 _scs 3 get exec _scs 1 get
+/findcmykcustomcolor where pop begin findcmykcustomcolor end
+_sc aload pop
+/setcustomcolor where pop begin setcustomcolor end
+}
+ifelse
+}
+{ _sc L1setcolor }
+ifelse
+}
+{ _sc L1setcolor }
+ifelse
+}
+{ _sp setpattern }
+ifelse
+} bind dd
+} EndLoad
+%%EndFile
+%%BeginFile: pdftext.prc
+%%Copyright: Copyright 1987-1994 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFText 51 dict dup begin put
+/initialize { PDFText begin } bd
+/terminate { end } bd
+/CopyFont {
+{
+1 index /FID ne 2 index /UniqueID ne and
+{ def } { pop pop } ifelse
+} forall
+} bd
+/modEnc {
+/_enc xdd
+/_icode 0 dd
+counttomark 1 sub -1 0
+{
+index
+dup type /nametype eq
+{
+_enc _icode 3 -1 roll put
+_icode 1 add
+}
+if
+/_icode xdd
+} for
+cleartomark
+_enc
+} bd
+/trEnc {
+/_enc xdd
+255 -1 0 {
+exch dup -1 eq
+{ pop /.notdef }
+{ Encoding exch get }
+ifelse
+_enc 3 1 roll put
+} for
+pop
+_enc
+} bd
+/TE {
+/_i xdd
+StandardEncoding 256 array copy modEnc
+_pdfEncodings exch _i exch put
+} bd
+/TZ
+{
+/_usePDFEncoding xdd
+findfont
+dup length 2 add dict
+begin
+{
+1 index /FID ne { def } { pop pop } ifelse
+} forall
+/FontName exch def
+_usePDFEncoding 0 ge
+{
+/Encoding _pdfEncodings _usePDFEncoding get def
+pop
+}
+{
+_usePDFEncoding -1 eq
+{
+counttomark 0 eq
+{ pop }
+{
+Encoding 256 array copy
+modEnc /Encoding exch def
+}
+ifelse
+}
+{
+256 array
+trEnc /Encoding exch def
+}
+ifelse
+}
+ifelse
+FontName currentdict
+end
+definefont pop
+}
+bd
+/_pdfIsLevel2
+systemdict /languagelevel known
+{languagelevel 2 ge}
+{false}
+ifelse
+def
+_pdfIsLevel2
+{
+/_pdfFontStatus
+{
+dup /Font resourcestatus
+{pop pop pop true}
+{
+/CIDFont /Category resourcestatus
+{
+pop pop
+/CIDFont resourcestatus
+{pop pop true}
+{false}
+ifelse
+}
+{ pop false }
+ifelse
+}
+ifelse
+} bd
+}
+{
+/_pdfFontStatusString 50 string def
+_pdfFontStatusString 0 (fonts/) putinterval
+/_pdfFontStatus
+{
+_pdfFontStatusString 6 42 getinterval
+cvs length 6 add
+_pdfFontStatusString exch 0 exch getinterval
+status
+{ pop pop pop pop true}
+{ false }
+ifelse
+} bd
+}
+ifelse
+/_pdfString100 100 string def
+/_pdfComposeFontName
+{
+dup length 1 eq
+{
+0 get
+1 index
+type /nametype eq
+{
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+2 index exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+exch pop
+true
+}
+{
+pop pop
+false
+}
+ifelse
+}
+{
+false
+}
+ifelse
+} bd
+systemdict /composefont known
+{
+/_pdfComposeFont
+{
+1 index /CMap resourcestatus
+{pop pop true}
+{false}
+ifelse
+1 index true exch
+{
+_pdfFontStatus not
+{pop false exit}
+if
+}
+forall
+and
+{composefont true}
+{
+_pdfComposeFontName
+{
+dup _pdfFontStatus
+{ findfont definefont true }
+{ pop pop false }
+ifelse
+}
+{
+dup _pdfFontStatus
+{ findfont true }
+{ pop false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+{
+/_pdfComposeFont
+{
+_pdfComposeFontName not
+{
+dup
+}
+if
+2 copy _pdfFontStatus
+{ pop findfont definefont true }
+{
+eq
+{pop false}
+{
+dup _pdfFontStatus
+{findfont true}
+{pop false}
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+/_pdfFaceByStyleDict 4 dict dup begin
+_pdfIsLevel2
+{
+/Serif
+/Ryumin-Light-83pv-RKSJ-H /Font resourcestatus
+{pop pop /Ryumin-Light}
+{/HeiseiMin-W3}
+ifelse
+def
+/SansSerif
+/GothicBBB-Medium-83pv-RKSJ-H /Font resourcestatus
+{pop pop /GothicBBB-Medium}
+{/HeiseiKakuGo-W5}
+ifelse
+def
+/Jun101-Light-83pv-RKSJ-H /Font resourcestatus
+{pop pop /RoundSansSerif /Jun101-Light def }
+{
+/HeiseiMaruGo-W4-83pv-RKSJ-H /Font resourcestatus
+{pop pop /RoundSansSerif /HeiseiMaruGo-W4 def}
+if
+}
+ifelse
+/Default Serif def
+}
+{
+/Serif /Ryumin-Light def
+/SansSerif /GothicBBB-Medium def
+{
+(fonts/Jun101-Light-83pv-RKSJ-H) status
+}stopped
+{pop}{
+{pop pop pop pop /RoundSansSerif /Jun101-Light def }
+if
+}ifelse
+/Default Serif def
+}
+ifelse
+end
+def
+/TZzero
+{
+/_styleArr xdd
+3 copy
+_pdfComposeFont
+{exch pop exch pop exch pop}
+{
+[
+0 1 _styleArr length 1 sub
+{
+_styleArr exch get
+_pdfFaceByStyleDict exch 2 copy known not
+{ pop /Default }
+if
+get
+}
+for
+]
+exch pop
+2 index 3 1 roll
+_pdfComposeFont
+{exch pop}
+{
+findfont
+dup length dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+currentdict
+end
+}
+ifelse
+}
+ifelse
+definefont pop
+}
+bd
+/swj {
+dup 4 1 roll
+dup length exch stringwidth
+exch 5 -1 roll 3 index mul add
+4 1 roll 3 1 roll mul add
+6 2 roll /_cnt 0 dd
+{1 index eq {/_cnt _cnt 1 add dd} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} bd
+/jss {
+4 1 roll
+{
+2 npop
+(0) exch 2 copy 0 exch put
+gsave
+32 eq
+{
+exch 6 index 6 index 6 index 5 -1 roll widthshow
+currentpoint
+}
+{
+false charpath currentpoint
+4 index setmatrix stroke
+}
+ifelse
+grestore
+moveto
+2 copy rmoveto
+} exch cshow
+6 npop
+} def
+/jsp
+{
+{
+2 npop
+(0) exch 2 copy 0 exch put
+32 eq
+{ exch 5 index 5 index 5 index 5 -1 roll widthshow }
+{ false charpath }
+ifelse
+2 copy rmoveto
+} exch cshow
+5 npop
+} bd
+/trj { _cx 0 32 _ax 0 6 5 roll } bd
+/pjsf { trj sfc awidthshow } bd
+/pjss { trj _ctm ssc jss } bd
+/pjsc { trj jsp } bd
+/_Tjdef [
+/pjsf load
+/pjss load
+{
+dup
+currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+} bind
+{
+trj swj rmoveto
+} bind
+{
+dup currentpoint 4 2 roll gsave
+pjsf
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll
+currentpoint gsave newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll gsave
+dup currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+/pjsc load
+] def
+/BT
+{
+/_inT true dd
+_ctm currentmatrix pop matrix _tm copy pop
+0 _rise translate _hs 1 scale
+0 0 moveto
+} bd
+/ET
+{
+/_inT false dd
+_tr 3 gt {clip} if
+_ctm setmatrix newpath
+} bd
+/Tr {
+_inT { _tr 3 le {currentpoint newpath moveto} if } if
+dup /_tr xdd
+_Tjdef exch get /_Tj xdd
+} bd
+/Tj {
+userdict /$$copystring 2 index put
+_Tj
+} bd
+/iTm { _ctm setmatrix _tm concat 0 _rise translate _hs 1 scale } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/Td { _mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto } bd
+/TD { dup /_ld xdd Td } bd
+/Tf {
+dup 1000 div /_fScl xdd
+exch findfont exch scalefont setfont
+} bd
+/TL { neg /_ld xdd } bd
+/Tw { /_cx xdd } bd
+/Tc { /_ax xdd } bd
+/Ts { /_rise xdd currentpoint iTm moveto } bd
+/Tz { 100 div /_hs xdd iTm } bd
+/Tk { exch pop _fScl mul neg 0 rmoveto } bd
+/T* { 0 _ld Td } bd
+/' { T* Tj } bd
+/" { exch Tc exch Tw ' } bd
+/TJ {
+{
+dup type /stringtype eq
+{ Tj }
+{ 0 exch Tk }
+ifelse
+} forall
+} bd
+/T- { _hy Tj } bd
+/d0/setcharwidth ld
+/d1 { setcachedevice /sfc{}dd /ssc{}dd } bd
+/nND {{/.notdef} repeat} bd
+/T3Defs {
+/BuildChar
+{
+1 index /Encoding get exch get
+1 index /BuildGlyph get exec
+}
+def
+/BuildGlyph {
+exch begin
+GlyphProcs exch get exec
+end
+} def
+} bd
+/MakeBold {
+findfont dup dup length 2 add dict
+begin
+CopyFont
+/PaintType 2 def
+/StrokeWidth .03 0 FontMatrix idtransform pop def
+/dummybold currentdict
+end
+definefont
+8 dict begin
+/_basefont exch def
+/_basefonto exch def
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/Encoding StandardEncoding def
+/BuildChar
+{
+exch begin
+_basefont setfont
+( )dup 0 4 -1 roll put
+dup stringwidth
+1 index 0 ne { exch .03 add exch }if
+setcharwidth
+0 0 moveto
+gsave
+dup show
+grestore
+_basefonto setfont
+show
+end
+}bd
+currentdict
+end
+definefont pop
+}bd
+/MakeItalic {
+findfont _italMtx makefont
+dup length dict
+begin
+CopyFont
+currentdict
+end
+definefont pop
+}bd
+/MakeBoldItalic {
+/dummybold exch
+MakeBold
+/dummybold
+MakeItalic
+}bd
+currentdict readonly pop end
+%%EndFile
+PDFText begin
+[39/quotesingle 96/grave 128/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+/.notdef/plusminus/.notdef/.notdef/yen/mu/.notdef/.notdef
+/.notdef/.notdef/.notdef/ordfeminine/ordmasculine/.notdef/ae/oslash
+/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef
+/guillemotleft/guillemotright/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide
+/.notdef/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright
+/fi/fl/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex
+/Idieresis/Igrave/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve/dotaccent/ring/cedilla
+/hungarumlaut/ogonek/caron
+0 TE
+[1/dotlessi/caron 39/quotesingle 96/grave 
+127/bullet/bullet/bullet/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE
+/bullet/bullet/bullet/bullet/quoteleft/quoteright/quotedblleft
+/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/bullet/bullet/Ydieresis/space/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine
+/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus
+/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash
+/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde
+/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis
+1 TE
+end
+%%BeginFile: pdfimage.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage 38 dict put
+PDF /PDFIVars 20 dict put
+PDF /PDFImage get begin
+/initialize { PDFImage begin } bd
+/terminate { end } bd
+/nulldict 0 dict def
+/gv { PDFIVars exch get } bd
+/pv { PDFIVars 3 1 roll put } bd
+/BI { save /savelevel exch pv mark } bd
+/EI { /savelevel gv restore } bd
+end
+%%EndFile
+%%BeginFile: pdfimg1b.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage get begin
+Level2? not StartLoad {
+PDFIVars /PDFImages 4 dict put
+/InstallImage {
+PDFIVars /PDFImages get 3 1 roll put
+} bd
+/ColorComps? {
+dup type /arraytype eq { 0 get } if /PDFImages gv exch get 0 get
+} bd
+/ColorProc? {
+dup type /arraytype eq { 0 get } if /PDFImages gv exch get 1 get
+} bd
+/ImageFilter { /DataSource load } bd
+/ID {
+5 counttomark 2 idiv
+dup 3 1 roll add
+dict begin
+{ def } repeat
+cleartomark
+currentdict
+end
+PDFIVars begin begin
+/ImageMatrix [ Width 0 0 Height neg 0 Height ] def
+/ColorSpace here { pop }
+{ /ColorSpace /DeviceGray def } ifelse
+ColorSpace ColorProc? exec
+end end
+} bd
+/DeviceGray [ 1
+{
+/ImageMask here not { false } if
+{
+sfc
+Width Height
+/Decode here { 0 get 1 eq } { false } ifelse
+ImageMatrix ImageFilter imagemask
+} {
+Width Height BitsPerComponent ImageMatrix ImageFilter image
+} ifelse
+} bind
+] InstallImage
+} EndLoad
+end
+%%EndFile
+%%BeginFile: pdfimg1c.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage get begin
+Level2? not StartLoad {
+/DeviceRGB [ 3
+{
+Width Height BitsPerComponent ImageMatrix ImageFilter 3
+ColorImage
+} bind
+] InstallImage
+/DeviceCMYK [ 4
+{
+Width Height BitsPerComponent ImageMatrix ImageFilter 4
+ColorImage
+} bind
+] InstallImage
+/ColorImage? /colorimage where { pop true } { false } ifelse def
+ColorImage? StartLoad {
+/ColorImage { false exch colorimage } bd
+} EndLoad
+ColorImage? not StartLoad {
+/SetupColorImage {
+/CIConv 255 2 BitsPerComponent exp 1 sub div pv
+/CIMask 0 not BitsPerComponent bitshift not pv
+/CIBSelect BitsPerComponent 1 sub not 7 and pv
+/CIBufferExp CIWidth string pv
+} bd
+/rgbtogray {
+0.11 mul exch 0.59 mul add exch 0.3 mul add round cvi
+} bd
+/cmyktogray {
+exch 0.11 mul add exch 0.59 mul add exch 0.3 mul add round cvi
+dup 255 gt { pop 255 } if
+255 exch sub
+} bd
+/FastRGB {
+CIDataProc dup
+0 3 2 index length 3 sub
+{
+dup 3 idiv
+2 index 2 index get
+3 index 3 index 1 add get
+4 index 4 index 2 add get
+rgbtogray
+3 -1 roll pop put dup
+} for
+0 exch length 3 idiv getinterval
+} bd
+/FastCMYK {
+CIDataProc dup
+0 4 2 index length 4 sub {
+dup 4 idiv
+2 index 2 index get
+3 index 3 index 1 add get
+4 index 4 index 2 add get
+5 index 5 index 3 add get
+cmyktogray
+3 -1 roll pop put dup
+} for
+0 exch length 4 idiv getinterval
+} bd
+/SlowRGB {
+CIDataProc pop
+0 1 CIWidth 1 sub {
+0 1 2 {
+1 index 3 mul add CIBPC mul
+CIBSelect 1 index 1 index and sub
+exch 8 idiv
+CIBuffer exch get
+exch neg bitshift CIMask and CIConv mul exch
+} for
+4 1 roll rgbtogray
+CIBufferExp 3 1 roll put
+} for
+CIBufferExp
+} bd
+/SlowCMYK {
+CIDataProc pop
+0 1 CIWidth 1 sub {
+0 1 3 {
+1 index 4 mul add CIBPC mul
+CIBSelect 1 index 1 index and sub
+exch 8 idiv
+CIBuffer exch get
+exch neg bitshift CIMask and CIConv mul exch
+} for
+5 1 roll cmyktogray
+CIBufferExp 3 1 roll put
+} for
+CIBufferExp
+} bd
+/ColorImage {
+/CINumComps exch pv
+/CIDataProc exch pv
+/CIIMatrix exch pv
+/CIBPC exch pv
+/CIHeight exch pv
+/CIWidth exch pv
+CIWidth CIHeight 8 CIIMatrix
+CINumComps 1 eq { /CIDataProc } {
+CINumComps 3 eq {
+CIBPC 8 eq { /FastRGB
+} { SetupColorImage /SlowRGB } ifelse
+} {
+CIBPC 8 eq { /FastCMYK
+} { SetupColorImage /SlowCMYK } ifelse
+} ifelse
+} ifelse
+load image
+} bd
+} EndLoad
+} EndLoad
+_ColorSep5044? {
+/colorimage where {
+pop
+/paintimage {
+{currentfile cyanstr readhexstring pop}
+{currentfile magentastr readhexstring pop}
+{currentfile yellowstr readhexstring pop}
+{currentfile blackstr readhexstring pop
+currentfile graystr readhexstring pop pop}
+true 4 colorimage
+} bd
+}{
+/paintimage {
+{currentfile cyanstr readhexstring pop pop
+currentfile magentastr readhexstring pop pop
+currentfile yellowstr readhexstring pop pop
+currentfile blackstr readhexstring pop pop
+currentfile graystr readhexstring pop}
+image
+} bd
+} ifelse
+} if
+end
+%%EndFile
+%%BeginFile: pdfimg1i.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage get begin
+Level2? not StartLoad {
+/testsystemdict {
+false exch where { systemdict eq { pop true } if } if
+} bd
+/NDColors 1 def
+ColorImage? StartLoad {
+/NDColors 0
+statusdict begin
+/processcolors where {
+pop pop processcolors
+}{
+/deviceinfo where {
+pop deviceinfo /Colors known {
+pop deviceinfo /Colors get
+} if
+} if
+} ifelse
+end
+def
+NDColors 0 ne {
+/colorimage testsystemdict
+/setcolortransfer testsystemdict and
+/currentcolortransfer testsystemdict and
+/currentcmykcolor testsystemdict and not {
+/NDColors 0 def
+} if
+} if
+NDColors dup 1 ne exch dup 3 ne exch 4 ne and and {
+/NDColors 0 def
+}if
+} EndLoad
+/BaseSpace? { ColorSpace 1 get } bd
+NDColors 0 ne StartLoad {
+/rgbtogray {
+0.11 mul exch 0.59 mul add exch 0.3 mul add round cvi
+} bd
+/ConvRGBtoGray {
+dup length 3 idiv
+0 1 3 -1 roll 1 sub {
+1 index exch 2 copy 3 mul
+2 copy get 3 1 roll
+2 copy 1 add get 3 1 roll
+2 add get
+rgbtogray
+put
+} for
+dup length 3 idiv 0 exch getinterval
+} bd
+/cmyktogray {
+exch 0.11 mul add exch 0.59 mul add exch 0.3 mul add round cvi
+dup 255 gt { pop 255 } if
+255 exch sub
+} bd
+/ConvCMYKtoGray {
+dup length 4 idiv
+0 1 3 -1 roll 1 sub {
+1 index exch 2 copy 4 mul
+2 copy get 3 1 roll
+2 copy 1 add get 3 1 roll
+2 copy 2 add get 3 1 roll
+3 add get cmyktogray put
+} for
+dup length 4 idiv 0 exch getinterval
+} bd
+/setupgrayclut {
+/CIbit1x CIgclut length 1 sub pv
+} bd
+/1compute {
+exch 2 BitsPerComponent exp 1 sub mul round cvi
+dup CIbit1x gt { pop pop 0 } { get 255 div } ifelse
+} bd
+/DoGrayCLUT {
+ColorSpace 3 get /CIgclut exch pv setupgrayclut
+[ { CIgclut 1compute } /exec load dup currenttransfer exch ]
+cvx settransfer
+Width Height BitsPerComponent ImageMatrix ImageFilter image
+} bd
+} EndLoad
+NDColors 1 eq StartLoad {
+/Indexed [ 1
+{
+BaseSpace? /DeviceRGB eq {
+ColorSpace dup 3 get ConvRGBtoGray 3 exch put
+} {
+BaseSpace? /DeviceCMYK eq {
+ColorSpace dup 3 get ConvCMYKtoGray 3 exch put
+} if
+} ifelse
+DoGrayCLUT
+}
+] InstallImage
+} EndLoad
+NDColors dup 3 eq exch 4 eq or StartLoad {
+/NULLPROC {} bd
+/concatutil {
+/exec load
+7 -1 roll /exec load
+} bd
+/spconcattransfer {
+/Dclut exch pv
+/Cclut exch pv
+/Bclut exch pv
+/Aclut exch pv
+/ncompute exch load pv
+currentcolortransfer
+[ { Aclut ncompute } concatutil ] cvx
+[ { Bclut ncompute } concatutil ] cvx
+[ { Cclut ncompute } concatutil ] cvx
+[ { Dclut ncompute } concatutil ] cvx
+setcolortransfer
+} bd
+/pvsubclut {
+1 add getinterval pv
+} bd
+} EndLoad
+NDColors 3 eq StartLoad {
+/cmyktorgb {
+dup 5 -1 roll add 255 exch sub 4 1 roll
+dup 4 -1 roll add 255 exch sub 3 1 roll
+add 255 exch sub
+3 { dup 0 lt { pop 0 } if cvi 3 1 roll } repeat
+} bd
+/ConvCMYKtoRGB {
+dup length 4 idiv
+0 1 3 -1 roll 1 sub {
+dup 3 mul exch 4 mul
+2 index exch 4 getinterval { } forall
+cmyktorgb
+5 -2 roll 2 copy 7 -1 roll put
+2 copy 1 add 6 -1 roll put
+2 copy 2 add 5 -1 roll put
+pop
+} bind for
+dup length 4 idiv 3 mul 0 exch getinterval
+} bd
+/setuprgbcluts {
+/CIbit3x CIrgbclut length 3 sub pv
+/CIrclut CIrgbclut pv
+/CIgclut CIrclut 1 CIbit3x pvsubclut
+/CIbclut CIrclut 2 CIbit3x pvsubclut
+} bd
+/3compute {
+exch 2 BitsPerComponent exp 3 mul 3 sub
+mul
+round
+cvi
+dup CIbit3x gt { pop pop 0 } { get 255 div } ifelse
+} bd
+/DoRGBCLUT {
+ColorSpace 3 get /CIrgbclut exch pv setuprgbcluts
+/3compute CIrclut CIgclut CIbclut dup spconcattransfer
+Width Height BitsPerComponent ImageMatrix ImageFilter
+[ exch /exec load /dup load dup ] cvx /NULLPROC load dup true 3
+colorimage
+} bd
+/Indexed [ 1
+{
+BaseSpace? /DeviceCMYK eq {
+ColorSpace dup 3 get ConvCMYKtoRGB 3 exch put
+} if
+BaseSpace? /DeviceGray eq { DoGrayCLUT }
+{ DoRGBCLUT } ifelse
+} bind
+] InstallImage
+} EndLoad
+NDColors 4 eq StartLoad
+{
+/rgbtocmyk {
+3 { 255 div 3 1 roll } repeat
+setrgbcolor currentcmykcolor
+4 { 1 exch sub 255 mul round cvi 4 1 roll } repeat
+} bd
+/ConvRGBtoCMYK {
+dup length 3 idiv
+dup 4 mul string 3 1 roll
+0 1 3 -1 roll 1 sub {
+dup 4 mul 3 index length 4 sub exch sub
+3 1 roll 3 mul
+1 index exch 3 getinterval {} forall
+rgbtocmyk
+7 -2 roll 2 copy 8 -1 roll put
+2 copy 1 add 7 -1 roll put
+2 copy 2 add 6 -1 roll put
+2 copy 3 add 5 -1 roll put
+pop exch
+} bind for
+pop
+} bd
+/setupcmykcluts {
+/CIbit4x CIcmykclut length 4 sub pv
+/CIcclut CIcmykclut pv
+/CImclut CIcclut 1 CIbit4x pvsubclut
+/CIyclut CIcclut 2 CIbit4x pvsubclut
+/CIkclut CIcclut 3 CIbit4x pvsubclut
+} bd
+/4compute {
+exch 2 BitsPerComponent exp 4 mul 4 sub mul round cvi
+dup CIbit4x gt { pop pop 0 } { get 255 div } ifelse
+} bd
+/DoCMYKCLUT {
+ColorSpace 3 get /CIcmykclut exch pv setupcmykcluts
+/4compute CIcclut CImclut CIyclut CIkclut spconcattransfer
+Width Height BitsPerComponent ImageMatrix ImageFilter
+[ exch /exec load /dup load dup dup ] cvx
+/NULLPROC load dup dup true 4 colorimage
+} bd
+/Indexed [ 1
+{
+BaseSpace? /DeviceRGB eq {
+ColorSpace dup 3 get ConvRGBtoCMYK 3 exch put
+} if
+BaseSpace? /DeviceGray eq { DoGrayCLUT } { DoCMYKCLUT } ifelse
+} bind
+] InstallImage
+} EndLoad
+NDColors 0 eq StartLoad {
+/CICSLookup 3 dict begin
+/DeviceGray {
+get
+put exch
+1 add exch 3 copy
+} bd
+/DeviceRGB {
+3 mul
+3 getinterval
+putinterval exch
+3 add exch 3 copy
+} bd
+/DeviceCMYK {
+4 mul
+4 getinterval
+putinterval exch
+4 add exch 3 copy
+} bd
+currentdict end pv
+/CIBLookup 3 dict begin
+8 { lookupandstore } bd
+4 {
+/shiftbyte 1 index pv
+-4 bitshift
+lookupandstore
+shiftbyte 15 and
+lookupandstore
+} bd
+2 {
+/shiftbyte 1 index pv
+-6 bitshift
+lookupandstore
+shiftbyte -4 bitshift
+3 and
+lookupandstore
+shiftbyte -2 bitshift
+3 and
+lookupandstore
+shiftbyte 3 and
+lookupandstore
+} bd
+currentdict end pv
+/colorexpand {
+BufferExp 0 CLUT
+3 copy
+7 -1 roll
+/BitLookup load
+forall
+pop pop pop pop pop
+} bd
+/Indexed [ 1
+{
+/CLUT ColorSpace 3 get pv
+/BitLookup CIBLookup BitsPerComponent get pv
+/lookupandstore BaseSpace? CICSLookup exch get pv
+/BufferExp CIBuffer length 8 mul BitsPerComponent idiv
+BaseSpace? ColorComps? mul string pv
+Width Height 8 ImageMatrix
+[
+ImageFilter /exec load /colorexpand load /exec load 0
+Width BaseSpace? ColorComps? mul /getinterval load /exec
+load
+] cvx
+BaseSpace? ColorComps? ColorImage
+} bind
+] InstallImage
+} EndLoad
+currentdict readonly pop
+} EndLoad
+end
+%%EndFile
+%%BeginFile: pdfimg2.prc
+%%Copyright: Copyright 1987-1993 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFImage get begin
+Level2? StartLoad {
+/ID {
+5 counttomark 2 idiv
+dup 3 1 roll add
+dict begin
+{ def } repeat
+cleartomark
+currentdict
+end
+begin
+/ImageType 1 def
+/ImageMatrix [ Width 0 0 Height neg 0 Height ] def
+/ImageMask here { not } { true } ifelse
+{ /ImageMask false def } if
+ImageMask not { ColorSpace setcolorspace } if
+/Intent here { ri } if
+/Decode here { pop } {
+/Decode [
+ImageMask {
+0 1
+} {
+currentcolorspace 0 get /Indexed eq {
+0 2 BitsPerComponent exp 1 sub
+} {
+mark currentcolor counttomark
+dup 2 add 1 roll cleartomark
+{ 0 1 } repeat
+} ifelse
+} ifelse
+] def
+} ifelse
+[
+/DataSource here { pop } {
+currentfile
+/Filter here {
+dup type /arraytype eq { length } { pop 1 } ifelse
+1 sub 0 1 3 -1 roll {
+/DecodeParms here {
+dup type /arraytype eq {
+1 index get
+} if
+dup null eq { pop } { exch } ifelse
+} if
+Filter dup type /arraytype eq
+{ exch get } { exch pop } ifelse
+filter
+dup
+} for
+} if
+/DataSource exch def
+} ifelse
+currentdict
+/ImageMask here not { false } if
+{ sfc imagemask } { image } ifelse
+counttomark
+{ dup status
+{ dup flushfile closefile }
+{ pop }
+ifelse
+}
+repeat
+pop
+end
+} bd
+currentdict readonly pop
+} EndLoad
+end
+%%EndFile
+currentdict readonly pop
+end end
+/currentpacking where {pop setpacking}if
+PDFVars/InitAll{[PDF PDFText PDFImage]{/initialize get exec}forall initgs 0 Tr}put
+PDFVars/TermAll{[PDFImage PDFText PDF]{/terminate get exec}forall}put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+% Begin encoding-delta
+[/N17/Symbol -1 TZ
+% End encoding-delta
+PDFVars/TermAll get exec end end
+
+%%EndSetup
+%%Page: 5 1
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+userdict begin
+%%BeginResource: font CourierNew
+%%EndResource
+end
+% Begin encoding-delta
+[/N21/Courier 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font TimesNewRoman,Italic
+%%EndResource
+end
+% Begin encoding-delta
+[/N15/Times-Italic 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font TimesNewRoman
+%%EndResource
+end
+% Begin encoding-delta
+[/N10/Times-Roman 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font Arial,Bold
+%%EndResource
+end
+% Begin encoding-delta
+[/N8/Helvetica-Bold 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font Arial
+%%EndResource
+end
+% Begin encoding-delta
+[/N6/Helvetica 1 TZ
+% End encoding-delta
+%%EndPageSetup
+0 0 612 792 RC
+BT
+186.24 724.08 TD
+0 0 0 rg
+/N6 9.12 Tf
+-0.0367 Tc
+0.041 Tw
+(The 1998 22nd Annual)Tj
+91.2 0 TD
+/N6 36 Tf
+0 Tc
+-0.324 Tw
+( )Tj
+10.08 0 TD
+/N8 36 Tf
+0.016 Tc
+0 Tw
+(acm)Tj
+71.76 0 TD
+/N6 36 Tf
+0 Tc
+-0.324 Tw
+( )Tj
+10.08 0 TD
+/N6 9.12 Tf
+-0.0469 Tc
+0.0512 Tw
+(International Collegiate)Tj
+-196.56 -23.76 TD
+/N8 18 Tf
+0.0106 Tc
+-0.0906 Tw
+(Programming Contest World Finals)Tj
+86.88 -20.16 TD
+/N8 13.92 Tf
+0.0087 Tc
+0.0537 Tw
+(sponsored by )Tj
+95.28 0 TD
+/N8 18 Tf
+0.122 Tc
+0 Tw
+(IBM)Tj
+-87.84 -36.96 TD
+/N6 24 Tf
+0.021 Tc
+-0.237 Tw
+(Problem C)Tj
+4.56 -21.6 TD
+/N6 18 Tf
+0.087 Tc
+-0.369 Tw
+(Lead or Gold)Tj
+-16.32 -20.16 TD
+-0.049 Tc
+-0.113 Tw
+(Input: )Tj
+50.16 0 TD
+0.0082 Tc
+0 Tw
+(leadgold.in)Tj
+-215.52 -23.76 TD
+/N10 10.08 Tf
+-0.0288 Tc
+-0.0154 Tw
+(How to make gold from lead has baffled alchemists for centuries. At the \
+last Alchemists Club Meeting \(ACM\), a)Tj
+0 -11.04 TD
+-0.0654 Tc
+0.0745 Tw
+(sensational breakthrough was announced. By mixing the three chemicals )Tj
+294 0 TD
+-0.0213 Tc
+0.0305 Tw
+(Algolene, )Tj
+41.76 0 TD
+-0.0593 Tc
+-0.0516 Tw
+(Basicine and )Tj
+53.76 0 TD
+-0.0311 Tc
+0.0402 Tw
+(Cobolase in the)Tj
+-389.52 -11.04 TD
+-0.0577 Tc
+-0.0255 Tw
+(correct ratio, one can create a mixture that transforms lead into gold. \
+Since )Tj
+301.44 0 TD
+-0.0213 Tc
+0.0305 Tw
+(Algolene, )Tj
+41.76 0 TD
+-0.0593 Tc
+-0.0516 Tw
+(Basicine and )Tj
+53.76 0 TD
+0.0044 Tc
+0.0047 Tw
+(Cobolase \(or A,)Tj
+-396.96 -11.04 TD
+-0.0436 Tc
+0.007 Tw
+(B, C for short\) are generally not sold individually, but rather mixed i\
+nto solutions, this may not be easy as it seems.)Tj
+0 -22.32 TD
+-0.0245 Tc
+-0.035 Tw
+(Consider the following example. Two mixtures of )Tj
+202.56 0 TD
+0.0053 Tc
+0.0038 Tw
+(Algolene, )Tj
+42 0 TD
+-0.0593 Tc
+0.0684 Tw
+(Basicine and )Tj
+54 0 TD
+-0.0353 Tc
+0.0044 Tw
+(Cobolase are available, in ratios of 1:2:3)Tj
+-298.56 -11.04 TD
+-0.032 Tc
+-0.0353 Tw
+(and 3:7:1, respectively. By mixing these solutions in a ratio of 1:2 we \
+obtain a solution of A, B, C with ratio 7:16:5.)Tj
+0 -11.04 TD
+-0.0361 Tc
+-0.0202 Tw
+(But there is no way to combine these mixtures into a new one with ratio \
+3:4:5. If we additionally had a solution of)Tj
+T*
+-0.052 Tc
+0.0383 Tw
+(ratio 2:1:2, then a 3:4:5 mixture would be possible by combining eight p\
+arts of 1:2:3, one part of 3:7:1 and five parts)Tj
+T*
+0.0038 Tc
+0.0053 Tw
+(of 2:1:2.)Tj
+0 -22.08 TD
+-0.0479 Tc
+-0.0344 Tw
+(Determining which mixing ratios we can obtain from a given set of soluti\
+ons is no trivial task. But, as the ACM has)Tj
+0 -11.28 TD
+-0.033 Tc
+-0.0179 Tw
+(shown, it is possibly a very profitable one. You must write a program to\
+ find mixing ratios.)Tj
+0 -23.76 TD
+/N8 12 Tf
+-0.0288 Tc
+0 Tw
+(Input)Tj
+0 -12.96 TD
+/N10 10.08 Tf
+-0.0465 Tc
+0.0106 Tw
+(The input file contains several test cases. The first line of each test \
+case contains an )Tj
+336 0 TD
+-0.0978 Tc
+0.1069 Tw
+(integer )Tj
+30.24 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(n)Tj
+5.04 0 TD
+/N10 10.08 Tf
+0.0017 Tc
+-0.1126 Tw
+( \(0 )Tj
+13.44 0 TD
+/N17 10.08 Tf
+-2.1509 Tc
+0 Tw
+(\243)Tj
+5.52 0 TD
+/N10 10.08 Tf
+0 Tc
+0.0091 Tw
+( )Tj
+2.64 0 TD
+/N15 10.08 Tf
+0 Tw
+(n)Tj
+5.04 0 TD
+/N10 10.08 Tf
+0.0091 Tw
+( )Tj
+2.64 0 TD
+/N17 10.08 Tf
+0.0062 Tc
+0 Tw
+(<)Tj
+5.52 0 TD
+/N10 10.08 Tf
+-0.1163 Tc
+-0.2346 Tw
+( 100\) that)Tj
+-406.08 -11.04 TD
+-0.0472 Tc
+-0.0528 Tw
+(represents the number of mixtures in the test case. The next )Tj
+240.72 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(n)Tj
+5.04 0 TD
+/N10 10.08 Tf
+-0.0703 Tc
+0.0108 Tw
+( lines each contain three non-negative integers )Tj
+187.92 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(a)Tj
+5.04 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+2.16 3.6 TD
+/N10 10.08 Tf
+-0.4709 Tc
+0.48 Tw
+(, )Tj
+4.56 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(b)Tj
+5.04 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+2.16 3.6 TD
+/N10 10.08 Tf
+-0.4709 Tc
+0.48 Tw
+(, )Tj
+4.56 0 TD
+/N15 10.08 Tf
+0.0038 Tc
+0 Tw
+(c)Tj
+4.56 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+2.16 3.6 TD
+/N10 10.08 Tf
+0.0091 Tc
+(,)Tj
+-463.92 -13.2 TD
+-0.008 Tc
+-0.0629 Tw
+(specifying the ratio )Tj
+79.92 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(a)Tj
+4.8 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+1.92 3.6 TD
+/N10 10.08 Tf
+0.0072 Tc
+-0.1181 Tw
+( : )Tj
+7.92 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(b)Tj
+4.8 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+1.92 3.6 TD
+/N15 10.08 Tf
+0 Tc
+0.0091 Tw
+( )Tj
+2.4 0 TD
+/N10 10.08 Tf
+0.0072 Tc
+0.0019 Tw
+(: )Tj
+5.28 0 TD
+/N15 10.08 Tf
+0.0038 Tc
+0 Tw
+(c)Tj
+4.32 -3.6 TD
+/N15 6.48 Tf
+0.3132 Tc
+(i)Tj
+1.92 3.6 TD
+/N15 10.08 Tf
+0 Tc
+0.0091 Tw
+( )Tj
+2.64 0 TD
+/N10 10.08 Tf
+-0.081 Tc
+0.0302 Tw
+(in which A, B, C occur in the )Tj
+119.76 0 TD
+/N15 10.08 Tf
+0.0072 Tc
+0 Tw
+(i)Tj
+2.88 4.56 TD
+/N10 6.48 Tf
+-0.0979 Tc
+(th)Tj
+5.04 -4.56 TD
+/N10 10.08 Tf
+-0.0415 Tc
+0.0266 Tw
+( mixture. At least one of these integers is positive for)Tj
+-245.52 -12.96 TD
+-0.0349 Tc
+-0.196 Tw
+(each mixture.)Tj
+0 -22.08 TD
+-0.0699 Tc
+0.0257 Tw
+(Finally, there is one line containing three non-negative integers )Tj
+255.6 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(a)Tj
+5.04 0 TD
+/N10 10.08 Tf
+-0.2309 Tc
+0.24 Tw
+(, )Tj
+5.04 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(b)Tj
+5.04 0 TD
+/N10 10.08 Tf
+-0.2309 Tc
+0.24 Tw
+(, )Tj
+5.04 0 TD
+/N15 10.08 Tf
+0.0038 Tc
+0 Tw
+(c)Tj
+4.56 0 TD
+/N10 10.08 Tf
+-0.0398 Tc
+0.001 Tw
+(, which specify the ratio )Tj
+98.64 0 TD
+/N15 10.08 Tf
+0 Tc
+0 Tw
+(a)Tj
+5.04 0 TD
+/N10 10.08 Tf
+0.0072 Tc
+(:)Tj
+2.88 0 TD
+/N15 10.08 Tf
+0 Tc
+(b)Tj
+5.04 0 TD
+/N10 10.08 Tf
+0.0072 Tc
+(:)Tj
+2.88 0 TD
+/N15 10.08 Tf
+0.0038 Tc
+(c)Tj
+4.56 0 TD
+/N10 10.08 Tf
+-0.0745 Tc
+-0.1564 Tw
+( in the desired)Tj
+-399.36 -11.04 TD
+-0.0261 Tc
+0.0052 Tw
+(solution. At least one of these integers is positive.)Tj
+0 -22.08 TD
+-0.0549 Tc
+0.0373 Tw
+(The input file is terminated with the integer 0 on a line by itself foll\
+owing the last test case.)Tj
+0 -35.04 TD
+/N8 12 Tf
+-0.01 Tc
+0 Tw
+(Output)Tj
+0 -11.76 TD
+/N10 10.08 Tf
+-0.0282 Tc
+0.003 Tw
+(For each test case, output the word )Tj
+-1.4357 Tc
+0 Tw
+(\223)Tj
+146.16 0 TD
+/N21 10.08 Tf
+-0.048 Tc
+(Mixture)Tj
+42 0 TD
+/N10 10.08 Tf
+-1.4357 Tc
+(\224)Tj
+-0.0365 Tc
+-0.0058 Tw
+(, followed by the ordinal number of the test case. On the next line, if)Tj
+-188.16 -12 TD
+-0.0385 Tc
+0.0026 Tw
+(it is possible to obtain the desired solution by mixing the input soluti\
+ons, output the word )Tj
+-1.4357 Tc
+0 Tw
+(\223)Tj
+363.6 0 TD
+/N21 10.08 Tf
+-0.048 Tc
+(Possible)Tj
+48 0 TD
+/N10 10.08 Tf
+-1.1957 Tc
+(\224)Tj
+-0.059 Tc
+0.0681 Tw
+(. Otherwise,)Tj
+-411.6 -12 TD
+-0.015 Tc
+-0.0559 Tw
+(output the word )Tj
+-1.4357 Tc
+0 Tw
+(\223)Tj
+70.32 0 TD
+/N21 10.08 Tf
+-0.048 Tc
+(Impossible)Tj
+60 0 TD
+/N10 10.08 Tf
+-1.1957 Tc
+(\224)Tj
+0.0091 Tc
+(.)Tj
+-130.32 -24.72 TD
+/N8 12 Tf
+-0.0251 Tc
+0.0251 Tw
+(Sample Input)Tj
+233.52 0 TD
+-0.0099 Tc
+0.0099 Tw
+(Output for the Sample Input)Tj
+-233.52 -11.28 TD
+/N21 10.08 Tf
+-0.048 Tc
+0 Tw
+(2)Tj
+0 -11.28 TD
+(1 2 3)Tj
+T*
+(3 7 1)Tj
+T*
+(3 4 5)Tj
+0 -11.52 TD
+(3)Tj
+0 -11.28 TD
+(1 2 3)Tj
+T*
+(3 7 1)Tj
+T*
+(2 1 2)Tj
+T*
+(3 4 5)Tj
+0 -11.52 TD
+(0)Tj
+233.52 102 TD
+(Mixture 1)Tj
+0 -11.28 TD
+(Impossible)Tj
+0 -22.56 TD
+(Mixture 2)Tj
+0 -11.52 TD
+(Possible)Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Trailer
+%%EOF
