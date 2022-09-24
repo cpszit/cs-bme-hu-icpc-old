@@ -1,0 +1,172 @@
+@import url("assets/fonts/Montserrat/Montserrat.css");
+
+/* Colors
+ * fresh #dd5522
+ * link #f4a460
+ * idk #cd853f
+ * important #ffd800
+ * schedule hover #fff0cc
+ * schedule normal #fadfa4
+ * details #fffaf0
+ * background1 #ecf5ff
+ * background2 #ffffde
+ * blue #191970
+ * blue2 #00bfff
+ * stuf #fafad2
+ * linky #113377
+ */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  background-color: #ffffde;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: #900090;
+  font-size: 18pt;
+}
+h2 {
+  color: #000088;
+  font-size: 14pt;
+}
+h3 {
+  color: #000088;
+  font-size: 12pt;
+}
+h4 {
+  font-size: 12pt;
+}
+
+input, textarea {
+  background-color: white;
+  border-style: thin groove;
+}
+
+pre,
+tt,
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.schedule .item .header .title
+{
+  font-weight: bold;
+}
+
+.descrip
+{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.schedule
+{
+  background-color: #fffaf0;
+  vertical-align: middle;
+  padding: 2px;
+}
+
+.schedule .item .header
+{
+  margin: 2px;
+  cursor: pointer;
+  width: auto;
+  padding: 6px 15px;
+  background-color: #fadfa4;    
+}
+
+.schedule .item .header .date
+{
+  float: right;
+  color: #666666;
+}
+
+.schedule .item .header .note
+{
+  margin-left: 2em;
+}
+
+.details
+{
+  padding: 0px 15px;
+}
+
+.details_embedded
+{
+  height: 100%;
+  width: 100%;
+}
+
+.details, .details_embedded
+{
+  background-color: #fffaf0;
+}
+
+.details p, .details_embedded p
+{
+  margin-top: 0.8em;
+}
+
+.outer { position:absolute; top:0; left:0; width:100%; height:100%; }
+.middle { height:100%; display:table; margin:0 auto; }
+.inner { vertical-align:middle; display:table-cell; }
+
+.inner
+{
+  width: 48em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.banner
+{
+  width: 100%;
+  margin-top: 1ex;
+  text-align: center;
+  background-color: White;
+  text-align: center;
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #fadfa4;
+}
+
+.menu li {
+  display: inline;
+  float: left;
+}
+
+.menu a {
+  display: block;
+  color: 000088;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #fff0cc;
+}
