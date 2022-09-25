@@ -91,7 +91,7 @@ code {
 
 .inner
 {
-  width: 52em;
+  max-width: 52em;
   margin: 0 auto;
 }
 
