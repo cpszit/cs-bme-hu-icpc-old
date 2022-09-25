@@ -18,32 +18,21 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   font-size: 10pt;
   background-color: #ffffde;
 }
 
-p {
-  margin-top: 0px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 h1 {
   color: #900090;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 h2 {
   color: #000088;
-  font-size: 14pt;
+  font-size: 12pt;
 }
-h3 {
+h3, h4 {
   color: #000088;
-  font-size: 12pt;
-}
-h4 {
-  font-size: 12pt;
+  font-size: 10pt;
 }
 
 input, textarea {
@@ -55,9 +44,6 @@ pre,
 tt,
 code {
   font-family: "Courier New", Courier, monospace;
-  font-size: small;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 
 .schedule .item .header .title
@@ -65,25 +51,12 @@ code {
   font-weight: bold;
 }
 
-.descrip
-{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.schedule
-{
-  background-color: #fffaf0;
-  vertical-align: middle;
-  padding: 2px;
-}
-
 .schedule .item .header
 {
-  margin: 2px;
   cursor: pointer;
   width: auto;
-  padding: 6px 15px;
+  padding: 5px 10px;
+  margin: 0px;
   background-color: #fadfa4;
 }
 
@@ -98,43 +71,23 @@ code {
   margin-left: 2em;
 }
 
-.details
-{
-  padding: 0px 15px;
-}
-
-.details_embedded
-{
-  height: 100%;
-  width: 100%;
-}
 
 .details, .details_embedded
 {
   background-color: #fffaf0;
 }
 
-.details p, .details_embedded p
-{
-  margin-top: 0.8em;
+.details p {
+  margin-top: 0px;
+  padding: 1em;
 }
 
 .inner
 {
-  width: 48em;
+  width: 58em;
   margin: 0 auto;
 }
 
-.banner
-{
-  width: 100%;
-  margin-top: 1ex;
-  text-align: center;
-  background-color: White;
-  text-align: center;
-  margin-top: 1ex;
-  margin-bottom: 1ex;
-}
 .menu {
   list-style-type: none;
   margin: 0;
