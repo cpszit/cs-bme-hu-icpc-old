@@ -71,6 +71,9 @@ code {
   margin-left: 2em;
 }
 
+.schedule .item .header h4 {
+  margin: 2px 0px;
+}
 
 .details, .details_embedded
 {
@@ -84,7 +87,7 @@ code {
 
 .inner
 {
-  width: 58em;
+  width: 52em;
   margin: 0 auto;
 }
 
