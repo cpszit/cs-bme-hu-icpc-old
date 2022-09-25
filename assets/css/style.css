@@ -21,10 +21,12 @@
   font-size: 14pt;
   word-wrap: break-word;
   hyphens: auto;
+  background-color: #ffffde;
 }
 
 body {
-  background-color: #ffffde;
+  max-width: 52em;
+  margin: 0 auto;
 }
 
 h1 {
@@ -105,11 +107,6 @@ code {
 
 .details_embedded p {
   margin: 10px 5px;
-}
-
-.inner {
-  max-width: 52em;
-  margin: 0 auto;
 }
 
 .menu {
