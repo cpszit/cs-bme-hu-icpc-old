@@ -46,16 +46,6 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
-.schedule .item .header .title
-{
-  font-weight: bold;
-}
-
-.schedule .item .header .note {
-  margin: 2px 0px;
-  padding:  0 1em;
-}
-
 .schedule .item .header
 {
   display: flex;
@@ -66,15 +56,23 @@ code {
   background-color: #fadfa4;
 }
 
-.schedule .item .header .date
-{
-  color: #666666;
-  margin: 2px 0px;
+.schedule .item .header h4 {
+  margin: 0;
 }
 
+.schedule .item .header .title
+{
+  font-weight: bold;
+}
 
-.schedule .item .header h4 {
-  margin: 2px 0px;
+.schedule .item .header .note {
+  margin-left: 0.7em;
+}
+
+.schedule .item .header .date
+{
+  margin-left: auto;
+  color: #666666;
 }
 
 .details, .details_embedded
