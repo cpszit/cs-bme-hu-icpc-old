@@ -21,8 +21,6 @@ body {
   font-weight: 400;
   font-size: 10pt;
   background-color: #ffffde;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 p {
@@ -86,7 +84,7 @@ code {
   cursor: pointer;
   width: auto;
   padding: 6px 15px;
-  background-color: #fadfa4;    
+  background-color: #fadfa4;
 }
 
 .schedule .item .header .date
@@ -121,17 +119,11 @@ code {
   margin-top: 0.8em;
 }
 
-.outer { position:absolute; top:0; left:0; width:100%; height:100%; }
-.middle { height:100%; display:table; margin:0 auto; }
-.inner { vertical-align:middle; display:table-cell; }
-
 .inner
 {
   width: 48em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
-
 
 .banner
 {
@@ -143,9 +135,6 @@ code {
   margin-top: 1ex;
   margin-bottom: 1ex;
 }
-
-
-
 .menu {
   list-style-type: none;
   margin: 0;
