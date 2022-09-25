@@ -17,7 +17,7 @@
  */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14pt;
   background-color: #ffffde;
 }
@@ -30,12 +30,14 @@ h2 {
   color: #000088;
   font-size: 16pt;
 }
-h3, h4 {
+h3,
+h4 {
   color: #000088;
   font-size: 14pt;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: white;
   border-style: thin groove;
 }
@@ -46,22 +48,34 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
-.schedule .item .header
-{
+.schedule .item .header {
   display: flex;
   cursor: pointer;
   width: auto;
   padding: 5px 10px;
   margin: 0px;
   background-color: #fadfa4;
+  align-items: left;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .schedule .item .header {
+    flex-direction: column;
+  }
+  .schedule .item .header .note {
+    margin-left: 0 !important;
+  }
+  .schedule .item .header .date {
+    margin-left: 0 !important;
+  }
 }
 
 .schedule .item .header h4 {
   margin: 0;
 }
 
-.schedule .item .header .title
-{
+.schedule .item .header .title {
   font-weight: bold;
 }
 
@@ -69,14 +83,13 @@ code {
   margin-left: 0.7em;
 }
 
-.schedule .item .header .date
-{
+.schedule .item .header .date {
   margin-left: auto;
   color: #666666;
 }
 
-.details, .details_embedded
-{
+.details,
+.details_embedded {
   background-color: #fffaf0;
   padding: 5px;
 }
@@ -89,30 +102,31 @@ code {
   margin: 10px 5px;
 }
 
-.inner
-{
+.inner {
   max-width: 52em;
   margin: 0 auto;
 }
 
 .menu {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background: #fadfa4;
+  align-items: left;
+  text-align: left;
 }
 
-.menu li {
-  display: inline;
-  float: left;
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+  }
 }
 
 .menu a {
   display: block;
   color: 000088;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 8px 10px;
   text-decoration: none;
 }
 
