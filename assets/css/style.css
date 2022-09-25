@@ -16,9 +16,14 @@
  * linky #113377
  */
 
-body {
+:root {
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+body {
   background-color: #ffffde;
 }
 
