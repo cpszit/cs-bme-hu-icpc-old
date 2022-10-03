@@ -19,13 +19,14 @@
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 14pt;
+  line-height: 1.5em;
   word-wrap: break-word;
   hyphens: auto;
   background-color: #ffffde;
 }
 
 body {
-  max-width: 52em;
+  max-width: 42em;
   margin: 0 auto;
 }
 
@@ -42,6 +43,12 @@ h4,
 h5 {
   color: #000088;
   font-size: 14pt;
+}
+
+h5 {
+  color: black;
+  font-size: 14pt;
+  margin: 12px 0px 12px 0px;
 }
 
 input,
@@ -88,7 +95,7 @@ code {
 }
 
 .schedule .item .header .note {
-  margin-left: 0.7em;
+  margin-left: 0.3em;
 }
 
 .schedule .item .header .date {
