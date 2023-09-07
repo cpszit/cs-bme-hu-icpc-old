@@ -64,7 +64,8 @@ code {
   font-family: "Courier New", Courier, monospace;
 }
 
-a {
+a, a:visited {
+  color: #000088;
   text-decoration: none;
 }
 
