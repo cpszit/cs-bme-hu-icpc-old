@@ -158,7 +158,7 @@ a, a:visited {
 }
 
 .results th, .results td {
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 1px solid #ddd; /* Lighter gray for cell borders */
 }
 
