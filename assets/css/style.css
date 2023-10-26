@@ -146,10 +146,6 @@ a, a:visited {
   text-decoration: none;
 }
 
-.menu li a:hover {
-  background-color: #fff0cc;
-}
-
 .results {
   width: 100%; 
   margin: 20px 0; 
@@ -169,10 +165,6 @@ a, a:visited {
   color: #000088; /* Slightly darker gray for headers */
 }
 
-.results tr:hover {
-  background-color: #f6f1dc; /* Very light beige for row highlight on hover */
-}
-
 .results tr:nth-child(even) {
   background-color: #fdfcf8; /* Alternate beige-white color for rows for better readability */
 }
@@ -181,6 +173,64 @@ a, a:visited {
 .results td:first-child, .results td:nth-child(2), .results th:first-child, .results th:nth-child(2) {
   text-align: center;
 }
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .results {
+    border: none;
+  }
+
+  /* Hide original headers */
+  .results th {
+    display: none; /* Hide original table headers on mobile */
+  }
+
+  /* Convert table rows to block for stacking */
+  .results tr {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  .results tr:nth-child(1) {
+    border: none;
+    display: none;
+  }
+
+  .results tr:nth-child(1) {
+    border: none;
+  }
+
+  /* Display the table data cells as blocks */
+  .results td {
+    display: block;
+    border: none; /* Remove border for cleaner appearance */
+    padding: 0px;
+  }
+
+  /* Reset alternate color for readability in single-column format */
+  .results tr:nth-child(odd) {
+    background-color: #fdfcf8;
+  }
+  .results tr:nth-child(even) {
+    background-color: #fffaf0;
+  }
+
+  /* Create a header from the data-mobile-header attribute */
+  .results td[data-mobile-header]::before {
+    content: attr(data-mobile-header);
+    font-weight: bold;
+    color: #000088;
+    display: block;
+    margin-bottom: 10px; /* Space between the header and members' names */
+  }
+
+  /* Hide original content of 1st and 2nd columns */
+  .results td:nth-child(1), .results td:nth-child(2) {
+    display: none;
+  }
+}
+
+
 
 .contest-images {
   width: 100%;
@@ -196,6 +246,30 @@ a, a:visited {
   width: 100%;
   cursor: pointer;
 }
+
+@media (max-width: 512px) { /* Adjust the breakpoint as needed */
+  .contest-images {
+    border: none;
+  }
+
+  .contest-images td {
+    /* Display the table data cells as blocks for stacking */
+    display: block;
+    width: 100%; /* Take full width */
+    border: none; /* Optionally remove border for cleaner appearance */
+  }
+
+  .contest-images tr {
+    /* Convert table rows to block for stacking */
+    display: block;
+    border: none; /* Optionally remove border for cleaner appearance */
+  }
+
+  .thumbnail {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+  }
+}
+
 
 /* Style the modal */
 .modal {
