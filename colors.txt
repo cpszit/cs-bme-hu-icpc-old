@@ -1,0 +1,20 @@
+Colors:
+
+ * fresh #dd5522
+ * link #f4a460
+ * idk #cd853f
+ * important #ffd800
+ * schedule hover #fff0cc
+ * schedule normal #fadfa4
+ * details #fffaf0
+ * background1 #ecf5ff
+ * background2 #ffffde
+ * blue #191970
+ * blue2 #00bfff
+ * stuf #fafad2
+ * linky #113377
+ * h1 #900090
+ * h2 #000088
+ * background #ffffde
+ * schedule background #fadfa4
+ * schedule text #666666

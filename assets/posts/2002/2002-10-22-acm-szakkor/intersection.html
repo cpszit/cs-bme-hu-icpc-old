@@ -1,0 +1,57 @@
+<body>
+
+<h2>Intersection </h2>
+
+<p>Source file: intersection.c / intersection.p<br>
+Input file: intersection.in<br>
+Output file: intersection.out<br>
+<br>
+You are to write a program that has to decide whether a given line segment
+intersects a given rectangle. </p>
+
+<h4>An example:</h4>
+
+<p>line: start point: (4,9)<br>
+end point: (11,2)<br>
+rectangle: left-top: (1,5)<br>
+right-bottom: (7,1)<br>
+<br>
+<img src="intersection.gif" width="217" height="190" naturalsizeflag="0" align="bottom"><br>
+<br>
+<i>Figure 1: Line segment does not intersect rectangle</i><br>
+<br>
+The line is said to intersect the rectangle if the line and the rectangle
+have at least one point in common. The rectangle consists of four straight
+lines and the area in between. Although all input values are integer numbers,
+valid intersection points do not have to lay on the integer grid. </p>
+
+<h3>Input</h3>
+
+<p>The input consists of <i>n</i> test cases. The first line of the input
+file contains the number <i>n</i>. Each following line contains one test
+case of the format: <i>xstart ystart xend yend xleft ytop xright ybottom</i>
+where (<i>xstart</i>, <i>ystart</i>) is the start and (<i>xend</i>, <i>yend</i>)
+the end point of the line and (<i>xleft</i>, <i>ytop</i>) the top left and
+(<i>xright</i>, <i>ybottom</i>) the bottom right corner of the rectangle.
+The eight numbers are separated by a blank. The terms <i>top left</i> and
+<i>bottom right</i> do not imply any ordering of coordinates. </p>
+
+<h3>Output</h3>
+
+<p>For each test case in the input file, the output file should contain
+a line consisting either of the letter "T" if the line segment
+intersects the rectangle or the letter "F" if the line segment
+does not intersect the rectangle. </p>
+
+<h3>Example</h3>
+
+<h4>Input</h4>
+
+<pre>1
+4 9 11 2 1 5 7 1</pre>
+
+<h4>Output</h4>
+
+<pre>F</pre>
+
+<p></p><hr><p></p>

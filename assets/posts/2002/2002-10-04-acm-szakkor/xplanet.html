@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <div>
+    <h1>X-Planet</h1>
+
+    All the inhabitants of the planet X build their houses in a triangular
+    shape. In order to save time and effort, they use a special construction
+    method. Everything starts with a straight wall. After that, for the
+    construction of every new house they just add two new walls to an
+    already existing wall, thus resul-ting in a closed, triangular shaped
+    house. Of course, the two new added walls might also be used as starting
+    walls for new houses. Sometimes, using this con-struc-tion pattern,
+    they arrive at situations where some houses are completely enclosed
+    in others (like in the figure). However, this is not a problem, because
+    kids might live in the included houses. <br>
+    To light up their houses, the X-habitants install a light bulb on
+    every corner of the final construction (a bulb in a corner is common
+    to all the houses sharing that corner). On each corner, there is a
+    switch whose touch toggles the state (on/off) of the bulb from both
+    that corner and also that of all the bulbs of the connected corners.
+    Two corners are considered connected if they are placed at the end
+    of the same wall. <br>
+    <br>
+    <b>Task</b><br>
+    Write a program that finds a switch touch sequence that will turn
+    on all the light bulbs, starting from a given state. <br>
+    <br>
+    <b>Input </b><br>
+    File name: <b>X.IN</b><br>
+    <br>
+    <b>Line 1</b>: N <li>an integer, the number of corners of the building,
+      labelled from 1 to N; <br>
+      <b>Lines 2..2x<i>N</i> - 2</b>: I J
+    </li>
+    <li>Two integers, separated by a blank, representing a wall between the
+      corners I and J; <br>
+      <b>Line 2x<i>N</i> - 1</b>: S<sub>1</sub> S<sub>2</sub> ... S<sub>
+        N</sub>
+    </li>
+    <li>N integers (separated by blanks) whose values are 0's or 1's,
+      corresponding to the state of the N light bulbs; </li>
+    <li>0 means off; 1 means on. <br>
+      <br>
+      The input data are guaranteed to represent a building that can be
+      constructed in the specified pattern. <br>
+      <br>
+      <b>Output </b><br>
+      File name: <b>X.OUT</b><br>
+      <b>Line 1</b>: L<sub>1</sub> L<sub>2</sub> ... L<sub>K</sub>
+    </li>
+    <li>K integers, separated by blanks, represen-ting the list of the labels
+      of the switches to be touched. </li>
+    <li>If there are several solutions, only one is required. </li>
+    <li>If there is no possible solution, you should write in the output file
+      a single line containing the number 0. <br>
+      <b>Limits</b>
+    </li>
+    <li>3 &lt;= N &lt;= 1000 <br>
+      <b>Example</b>
+      <pre>X.IN			X.OUT <br>6			1 6<br>1 3<br>1 4<br>1 5<br>2 3<br>2 4<br>3 4<br>3 6<br>4 5<br>4 6<br>0 1 1 1 0 0<br></pre>
+      In the figure below you can see a possible building
+      steps for the example file; the labels for the bulbs initially illuminated
+      are underlined.
+      <br>
+      <img border="5" src="xplanet.gif">
+    </li>
+    <br>
+  </div>
+</body>
+
+</html>

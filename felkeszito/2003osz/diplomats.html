@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+  <title>Dining Diplomats</title>
+
+</head>
+
+<body>
+
+  <h2> Dining Diplomats</h2>
+  You have been hired to arrange the seating of diplomats at a dinner
+  party. Your employer has invited 9 diplomats from several countries around
+  the world. Each diplomat will speak from one to five languages. Diplomats
+  not speaking a common language can not talk to each other. Furthermore, some
+  of the countries represented will not have diplomatic relations with other
+  nations represented, so these diplomats will not be speaking to each other
+  either. Your task is to determine the seating arrangement at the dinner
+  table for your employer and the 9 guests such that each person can speak
+  to the person seated on each side. <br>
+  <br>
+  The table to be used for dinner is round, and seats 10 people. Your
+  employer will be seated at the first position at the table. The other positions
+  will be numbered clockwise from 2 to 10. The person seated to the left
+  of your employer is in seat number 2, the person seated to the right of
+  your employer is in seat number 10. <br>
+  <br>
+  Persons seated next to each other must speak a common language. A person
+  may speak to the person on the left in one common language, and speak
+  to the person on the right in another language. The governments of the
+  guests seated next to each other must have formally recognized each other.
+  <br>
+  <br>
+  The government of your employer has diplomatic relations with the governments
+  of all of his guests. The government of a guest may or may not have diplomatic
+  relations with the governments of all the other guests. <br>
+  <br>
+  Two diplomats from the same country will have diplomatic relations
+  with the same list of countries. A country will always have diplomatic
+  relations with itself. Diplomats from the same country may or may not speak
+  any languages in common. <br>
+  <br>
+  Input to the program will be a list of ten people, one per line, ended
+  by end-of-file. The first line will represent your employer, the other
+  lines will represent the guest diplomats. Each line consists of a sequence
+  of words, where words are separated by a single space. Each word is a sequence
+  of capitals. The first word consists of 3 characters and represents the
+  code for the guest's country. The second word contains 1 to 5 characters
+  and represents the languages that the guest speaks. Each language that the
+  guest speaks is represented by a single letter. Finally, thereis a list of
+  up to 9 three-character words representing the codes of the countries of
+  the other guests that this guest's government has diplomatic relations with.
+  <br>
+  <br>
+  Output of the program is a table of the seating arrangement. It contains
+  one diplomat per line. Each line starts with the seat number followed
+  by three words, all separated by single spaces. The first word is the language
+  code for the person seated on the left. The second word is the country
+  code for the diplomat. The third word is the language code for the person
+  seated on the right. The seating arrangement should be printed in the order
+  1 to 10, and no blank line should appear after line 10. More than one solution
+  may exist, but you need find only one. If no solution is found, output
+  the sentence
+  <pre>NO SOLUTION EXISTS</pre>
+
+  <table>
+    <tbody>
+      <tr>
+        <td valign="top">
+          <h3>Sample Input:</h3>
+
+          <pre>USA EF CHN GBR USR FRA FRG JPN ISR POR KOR<br>CHN CFE USA GBR FRA FRG<br>GBR ER USA CHN USR FRA FRG JPN ISR POR KOR<br>USR RF USA GBR FRA FRG<br>FRA F USA CHN GBR USR FRG JPN ISR POR<br>FRG ERG USA CHN GBR USR FRA JPN ISR POR<br>JPN JHG USA GBR FRA FRG JPN ISR POR KOR<br>ISR HER USA GBR FRA FRG JPN KOR<br>POR PGE USA GBR FRA FRG JPN<br>KOR KEC USA GBR USR JPN ISR</pre>
+        </td>
+        <td width="10"><br>
+        </td>
+        <td valign="top">
+          <h3>Sample Output</h3>
+
+          <pre>1 E USA E<br>2 E KOR E<br>3 E ISR H4 H JPN G5 G FRG G<br>6 G POR E<br>7 E GBR E<br>8 E USR F<br>9 F FRA F<br>10 F CHN E</pre>
+          <br>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>

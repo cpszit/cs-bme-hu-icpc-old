@@ -1,0 +1,47 @@
+<TITLE>Opgave B : Wormholes</TITLE>
+<H1> Problem B : Wormholes</H1>
+
+inputfile:	B.IN<P>
+
+outputfile:	B.OUT
+<H2>Description</H2>
+In the year 2163, <CITE>wormholes</CITE>  were discovered. A wormhole is a subspace tunnel through space and time connecting two star systems. Wormholes have a few peculiar properties:
+
+<UL>
+<LI> Wormholes are <CITE>one-way</CITE>  only.
+<LI> The time it takes to travel through a wormhole is negligible.
+<LI> A wormhole has two end points, each situated in a star system.
+<LI> A star system may have more than one wormhole end point within its boundaries.
+<LI> For some unknown reason, starting from our solar system, it is always possible to end up in any star system by following a sequence of wormholes (maybe Earth <CITE>is</CITE>  the centre of the universe).
+<LI> Between any pair of star systems, there is at most one wormhole in either direction.
+<LI> There are no wormholes with both end points in the same star system.
+</UL>
+
+All wormholes have a constant time difference between their end points. For example, a specific wormhole may cause the person travelling through it to end up 15 years in the future. Another wormhole may cause the person to end up 42 years in the past.
+
+A brilliant physicist, living on earth, wants to use wormholes to study the Big Bang. Since warp drive has not been invented yet, it is not possible for her to travel from one star system to another one directly. This <CITE>can</CITE>  be done using wormholes, of course.
+<H2>Problem</H2>
+The scientist wants to reach a cycle of wormholes somewhere in the universe that causes her to end up in the past. By travelling along this cycle a lot of times, the scientist is able to go back as far in time as necessary to reach the beginning of the universe and see the Big Bang with her own eyes. Write a program to find out whether such a cycle exists.
+<H2>Input</H2>
+The input file starts with a line containing the number of cases <CITE>c</CITE>  to be analysed. Each case starts with a line with two numbers <CITE>n</CITE>  and <CITE>m</CITE> . These indicate the number of star systems <CITE>(1 <= n <= 1000)</CITE>  and the number of wormholes <CITE>(0 <= m <= 2000)</CITE> . The star systems are numbered from <CITE>0</CITE>  (our solar system) through <CITE>n-1</CITE> . For each wormhole a line containing three integer numbers <CITE>x</CITE> , <CITE>y</CITE> and <CITE>t</CITE> is given. These numbers indicate that this wormhole allows someone to travel from the star system numbered <CITE>x</CITE>  to the star system numbered <CITE>y</CITE> , thereby ending up <CITE>t (-1000 <= t <= 1000) </CITE>  years in the future.
+<H2>Output</H2>
+The output consists of <CITE>c</CITE>  lines, one line for each case, containing the word <pre>possible</pre> if it is indeed possible to go back in time indefinitely, or <pre>not possible</pre> if this is not possible with the given set of star systems and wormholes.
+<H2>Example</H2>
+<H3>Sample input</H3>
+<pre>
+2
+3 3
+0 1 1000
+1 2 15
+2 1 -42
+4 4
+0 1 10
+1 2 20
+2 3 30
+3 0 -60
+</pre>
+<H3>Correct output for the sample input</H3>
+<pre>
+possible
+not possible
+</pre>
