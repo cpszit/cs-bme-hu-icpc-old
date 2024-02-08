@@ -1,0 +1,106 @@
+<center><h1 class="h1.hd">South Central USA Regional Programming Contest</h1></center>
+
+                                                                             
+
+<center>
+<i>Exact Change Only
+</i></center>
+                         
+<p>
+<b>Introduction:</b>
+<p>
+Boudreaux reached over and shook awake Thibodeaux, who had dozed off somewhere
+in New Mexico.  "Where we at?" Thibodeaux groggily yawned.
+<p>
+"Not in Vegas, I gua-ran-tee, but could you get my knapsack?" Boudreaux asked,
+gesturing to the worn, leather backpack in the back seat of their cherry red
+Ford Miata.
+<p>
+"Why, is there a problem?"
+<p>
+"Just hand me my knapsack, problem or not."
+<p>
+Thibodeaux complied, glancing up as Boudreaux slowed the car to a stop in a line
+of vehicles approaching a toll booth.  "$1.65 -- Exact change only," Thibodeaux
+read the yellow sign on the front of a small wooden building occupied by a lone
+toll booth operator.  "I have to get $1.65 in exact change?" Thibodeaux asked,
+digging through the knapsack, "all I have are ten quarters, four dimes, and
+three pennies.  I don't have any nickels . . ."
+<p>
+"Just give me five of the quarters and the four dimes," Boudreaux replied,
+holding out his hand.
+<p>
+"Oh yeah," Thibodeaux said, handing over the coins, "that does add up to $1.65.
+I wish there were an easy way to figure out if you have an exact monetary
+amount, given a set of coins."
+<p>
+"Hmmm," Boudreaux shrugged, "sounds like a good programming problem."
+<p>
+<b>Input:</b>
+<p>
+Input to this problem will consist of a (non-empty) series of up to <tt>100</tt>
+data sets.  Each data set will be formatted according to the following
+description, and there will be <b>no blank lines</b> separating data sets.
+<p>
+A single data set has <tt>1</tt> component:
+<ol>
+   <li>
+      <i>Start line</i> - A single line:
+      <pre>
+         A B C D E
+      </pre>
+      where:
+      <ul>
+         <li>
+            <tt>A</tt>: (<tt>0.01 &le; A &le; 5.00</tt>) is a decimal number 
+            (to two decimal places) of a monetary amount.
+         </li>
+         <li>
+            <tt>B</tt>: (<tt>0 &le; B &le; 100</tt>) is an integer number of
+            quarters (one quarter = $0.25).
+         </li>
+         <li>
+            <tt>C</tt>: (<tt>0 &le; C &le; 100</tt>) is an integer number of
+            dimes (one dime = $0.10).
+         </li>
+         <li>
+            <tt>D</tt>: (<tt>0 &le; D &le; 100</tt>) is an integer number of
+            nickels (one nickel = $0.05).
+         </li>
+         <li>
+            <tt>E</tt>: (<tt>0 &le; E &le; 100</tt>) is an integer number of
+            pennies (one penny = $0.01).
+         </li>
+      </ul>
+
+   </li>
+</ol>
+<p>
+<b>Output:</b>
+<p>
+For each data set, there will be exactly one line of output.  If there exists
+one or more subsets of the given coins whose values add up to the given monetary
+amount exactly, the output will be a single line in the form:
+<pre>
+   A B C D
+</pre>
+where <tt>A</tt> is the number of quarters, <tt>B</tt> is the number of dimes,
+<tt>C</tt> is the number of nickels, and <tt>D</tt> is the number of pennies,
+for the subset with the fewest number of coins.  Otherwise, the output will be
+a single line with the statement:
+<pre>
+   NO EXACT CHANGE
+</pre>
+<p>
+<b>Sample Input:</b>
+<pre>
+0.45 2 1 1 4
+0.75 3 7 1 75
+</pre>
+<p>
+<b>Sample Output:</b>
+<pre>
+NO EXACT CHANGE
+3 0 0 0
+</pre>
+<p>
