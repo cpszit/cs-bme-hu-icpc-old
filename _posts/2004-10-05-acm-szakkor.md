@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ACM szakkör
-date: 2003-10-03 12:00:00 +0100
+date: 2004-10-05 12:00:00 +0100
 summary: Megbeszélt feladatok
 categories: [onkepzokor]
 keywords: onkepzokor, feladatok
@@ -11,25 +11,26 @@ tags:
 math: false
 ---
 
-<li>
-        <b>2004. szeptember 21. (kedd), 18.15</b><br />
-        <a href="http://www.sgi.com/tech/stl/">Standard Template Library</a>, HF:
-        <a href=""></a>
+        
+		
+        <a href="ora4/"></a>,
+        <a href="ora4/telecom_partners.pdf">Telecommunication Partners</a>
+        HF:
+        <a href="ora4/ket_feladat.pdf">Két feladat</a>, <a href="ora4/tricky_trees.pdf">Tricky Trees</a>
       </li>
 
+Időpont: 2004. október 5. (kedd), 18.15
 
-Időpont: 2004. szeptember 17. (szerda), 16.30
+Gráfos feladatok.
 
 Megbeszélt feladatok:
 
-- Megbeszéltük az eddigi házi feladatokat.
+- [DNA sequences]({{ site.baseurl }}/assets/posts/2003/2004-10-05-acm-szakkor/dna.pdf)
+- [X-Mart]({{ site.baseurl }}/assets/posts/2003/2004-10-05-acm-szakkor/x-mart.pdf)
+- [Making Labels]({{ site.baseurl }}/assets/posts/2003/2004-10-05-acm-szakkor/making_labels.pdf)
+- [Making Labels]({{ site.baseurl }}/assets/posts/2003/2004-10-05-acm-szakkor/making_labels.pdf)
 
 Házi feladat:
 
 - [Water Tank](ora2/watertank.pdf)
 - [Pipe]({{ site.baseurl }}/assets/posts/2003/2003-10-03-acm-szakkor/pipe.ps)
-
- <li>
-        <b></b><br />
-        Megbeszélés, időpontegyeztetés
-      </li>

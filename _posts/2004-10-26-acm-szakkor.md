@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ACM szakkör
-date: 2003-10-03 12:00:00 +0100
+date: 2004-10-26 12:00:00 +0100
 summary: Megbeszélt feladatok
 categories: [onkepzokor]
 keywords: onkepzokor, feladatok
